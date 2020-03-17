@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+@media (orientation: portrait) and (max-width: 320px) {
+    body {
+        background-color: #E1D5C3;
+        width: 100vw;
+        height: 200vh;
+        /* overflow: hidden; */
+    }
+
+    /* Navigation Section */
+
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        position: fixed;
+        width: 100vw;
+        height: 60px;
+        top: 10px;
+        left: 0;
+        z-index: 10;
+        background-color: rgba(1, 0, 0, 0.75);
+    }
+
+    nav.mobile li {
+        position: absolute;
+        list-style: none;
+    }
+
+    nav.mobile li:nth-child(1) {
+        top: -10px;
+        left: 10px;
+    }
+
+    nav.mobile li:nth-child(2) {
+        top: 10px;
+        right: 15px;
+        height: 40px;
+        width: 40px;
+        background-color: #E1D5C3;
+    }
+
+    nav.mobile li:nth-child(2) img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Header Section */
+}

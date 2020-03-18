@@ -59,15 +59,19 @@ nav.mobile li:nth-child(2) img {
 
 /* Header Section */
 
-/* header div.img1 {
+header div.img1 {
     height: 100vh;
     width: 100vw;
-    background-image: url("/Assets/Images/Sections/Main/main1.jpg");
-} */
+    /* background-image: url("Assets/Images/Sections/Main/main1.jpg"); */
+}
 
 /* iPhone 5/SE Support - (320px x 568px) */
 
-@media (max-width: 320px) {
+@media (max-width: 359px) {
+
+    header div.img1 {
+        background: url("Assets/Images/Sections/Main/Img1/image1-320x568-90.jpg") center bottom / contain no-repeat #000;
+    }
 
     nav.mobile li:nth-child(1) img.res320x568 {
         display: block;
@@ -78,6 +82,10 @@ nav.mobile li:nth-child(2) img {
 /* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
 
 @media (min-width: 360px) and (max-width: 375px) {
+
+    header div.img1 {
+        background: url("Assets/Images/Sections/Main/Img1/image1-375x667-90.jpg") center bottom / contain no-repeat #000;
+    }
 
     nav.mobile li:nth-child(1) img.res360x640 {
         display: block;
@@ -97,7 +105,11 @@ nav.mobile li:nth-child(2) img {
 
 /* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
 
-@media (min-width: 376px) and (max-width: 414px) {
+@media (min-width: 376px) and (max-width: 500px) {
+
+    header div.img1 {
+        background: url("Assets/Images/Sections/Main/Img1/image1-414x736-90.jpg") center bottom / contain no-repeat #000;
+    }
 
     nav.mobile li:nth-child(1) img.res411x731 {
         display: block;
@@ -118,6 +130,10 @@ nav.mobile li:nth-child(2) img {
 /* iPad Support / (768px x 1024px) */
 
 @media (min-width: 500px) and (max-width: 1023px) {
+
+    header div.img1 {
+        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
 
     nav.mobile li:nth-child(1) {
         left: 30px;

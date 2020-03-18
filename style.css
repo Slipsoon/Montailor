@@ -114,3 +114,28 @@ nav.mobile li:nth-child(2) img {
         width: 50px;
     }
 }
+
+/* iPad Support / (768px x 1024px) */
+
+@media (min-width: 500px) and (max-width: 1023px) {
+
+    nav.mobile li:nth-child(1) {
+        left: 30px;
+    }
+
+    nav.mobile li:nth-child(1) img.res411x731 {
+        display: block;
+    }
+
+    nav.mobile {
+        top: 15px;
+        height: 90px;
+    }
+
+    nav.mobile li:nth-child(2) {
+        top: 20px;
+        right: 30px;
+        height: 50px;
+        width: 50px;
+    }
+}

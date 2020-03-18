@@ -3,58 +3,114 @@
     padding: 0;
 }
 
+/* iPhone 5/SE Support - (320px x 568px) */
+
 body {
-    background-color: gray;
+    background-color: #E1D5C3;
+    width: 100vw;
+    height: 200vh;
+    /* overflow: hidden; */
 }
 
-@media (orientation: portrait) and (max-width: 320px) {
-    body {
-        background-color: #E1D5C3;
-        width: 100vw;
-        height: 200vh;
-        /* overflow: hidden; */
+/* Navigation Section */
+
+nav.desktop {
+    display: none;
+}
+
+nav.mobile {
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    top: 20px;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(1, 0, 0, 0.75);
+}
+
+nav.mobile li {
+    position: absolute;
+    list-style: none;
+}
+
+nav.mobile li:nth-child(1) {
+    top: -10px;
+    left: 10px;
+}
+
+nav.mobile li:nth-child(1) img {
+    display: none;
+}
+
+nav.mobile li:nth-child(2) {
+    top: 10px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #E1D5C3;
+}
+
+nav.mobile li:nth-child(2) img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Header Section */
+
+/* header div.img1 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/Assets/Images/Sections/Main/main1.jpg");
+} */
+
+/* iPhone 5/SE Support - (320px x 568px) */
+
+@media (max-width: 320px) {
+
+    nav.mobile li:nth-child(1) img.res320x568 {
+        display: block;
     }
 
-    /* Navigation Section */
+}
 
-    nav.desktop {
-        display: none;
+/* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
+
+@media (min-width: 360px) and (max-width: 375px) {
+
+    nav.mobile li:nth-child(1) img.res360x640 {
+        display: block;
     }
 
     nav.mobile {
-        position: fixed;
-        width: 100vw;
-        height: 60px;
-        top: 10px;
-        left: 0;
-        z-index: 10;
-        background-color: rgba(1, 0, 0, 0.75);
-    }
-
-    nav.mobile li {
-        position: absolute;
-        list-style: none;
-    }
-
-    nav.mobile li:nth-child(1) {
-        top: -10px;
-        left: 10px;
+        height: 80px;
     }
 
     nav.mobile li:nth-child(2) {
-        top: 10px;
-        right: 15px;
-        height: 40px;
-        width: 40px;
-        background-color: #E1D5C3;
+        top: 15px;
+        height: 50px;
+        width: 50px;
     }
 
-    nav.mobile li:nth-child(2) img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+}
+
+/* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
+
+@media (min-width: 376px) and (max-width: 414px) {
+
+    nav.mobile li:nth-child(1) img.res411x731 {
+        display: block;
     }
 
-    /* Header Section */
+    nav.mobile {
+        top: 15px;
+        height: 90px;
+    }
+
+    nav.mobile li:nth-child(2) {
+        top: 20px;
+        height: 50px;
+        width: 50px;
+    }
 }

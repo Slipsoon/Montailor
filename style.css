@@ -59,7 +59,7 @@ nav.mobile li:nth-child(2) img {
 
 /* Header Section */
 
-header div.img1 {
+header>div {
     height: 100vh;
     width: 100vw;
     /* background-image: url("Assets/Images/Sections/Main/main1.jpg"); */
@@ -70,7 +70,15 @@ header div.img1 {
 @media (max-width: 359px) {
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/image1-320x568-90.jpg") center bottom / contain no-repeat #000;
+        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
+
+    header div.img2 {
+        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    header div.img3 {
+        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     nav.mobile li:nth-child(1) img.res320x568 {
@@ -84,7 +92,15 @@ header div.img1 {
 @media (min-width: 360px) and (max-width: 375px) {
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/image1-375x667-90.jpg") center bottom / contain no-repeat #000;
+        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
+
+    header div.img2 {
+        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    header div.img3 {
+        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     nav.mobile li:nth-child(1) img.res360x640 {
@@ -108,7 +124,15 @@ header div.img1 {
 @media (min-width: 376px) and (max-width: 500px) {
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/image1-414x736-90.jpg") center bottom / contain no-repeat #000;
+        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
+
+    header div.img2 {
+        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    header div.img3 {
+        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     nav.mobile li:nth-child(1) img.res411x731 {
@@ -133,6 +157,14 @@ header div.img1 {
 
     header div.img1 {
         background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
+
+    header div.img2 {
+        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    header div.img3 {
+        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     nav.mobile li:nth-child(1) {

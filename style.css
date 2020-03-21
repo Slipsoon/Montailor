@@ -115,6 +115,43 @@ section.about p {
     text-align: center;
 }
 
+/* Section - Offer */
+
+section.offer h1 {
+    position: relative;
+    width: 150px;
+    top: 100px;
+    left: 30px;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px #000;
+}
+
+section.offer p {
+    position: relative;
+    width: 160px;
+    top: 130px;
+    left: 30px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+section.offer button {
+    position: relative;
+    top: 150px;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-shadow: 3px 3px 10px #000;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
 /* iPhone 5/SE Support - (320px x 568px) */
 
 @media (max-width: 359px) {
@@ -142,7 +179,7 @@ section.about p {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/Main/About/about-320x568-90.jpg") center / cover no-repeat #000;
+        background: url("Assets/Images/Sections/About/about-320x568-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -160,6 +197,11 @@ section.about p {
         font-size: 0.9rem;
     }
 
+    /* Section - Offer */
+
+    section.offer {
+        background: url("Assets/Images/Sections/Offer/offer-320x568-90.jpg") center / cover no-repeat #000;
+    }
 }
 
 /* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
@@ -199,7 +241,7 @@ section.about p {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/Main/About/about-375x667-90.jpg") center / cover no-repeat #000;
+        background: url("Assets/Images/Sections/About/about-375x667-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -213,6 +255,28 @@ section.about p {
         height: 350px;
         top: 190px;
         left: 170px;
+    }
+
+    /* Section - Offer */
+
+    section.offer {
+        background: url("Assets/Images/Sections/Offer/offer-320x568-90.jpg") center / cover no-repeat #000;
+    }
+
+    section.offer h1 {
+        top: 120px;
+        font-size: 3.5rem;
+    }
+
+    section.offer p {
+        width: 180px;
+        top: 150px;
+        font-size: 1rem;
+    }
+
+    section.offer button {
+        top: 170px;
+        font-size: 1.2rem;
     }
 }
 
@@ -254,7 +318,7 @@ section.about p {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/Main/About/about-414x736-90.jpg") center / cover no-repeat #000;
+        background: url("Assets/Images/Sections/About/about-414x736-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -270,6 +334,28 @@ section.about p {
         top: 200px;
         left: 180px;
         font-size: 1.2rem;
+    }
+
+    /* Section - Offer */
+
+    section.offer {
+        background: url("Assets/Images/Sections/Offer/offer-414x736-90.jpg") center / cover no-repeat #000;
+    }
+
+    section.offer h1 {
+        top: 140px;
+        font-size: 4rem;
+    }
+
+    section.offer p {
+        width: 200px;
+        top: 170px;
+        font-size: 1.1rem;
+    }
+
+    section.offer button {
+        top: 200px;
+        font-size: 1.4rem;
     }
 }
 
@@ -319,7 +405,7 @@ section.about p {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/Main/About/about-718x854-90.jpg") center / cover no-repeat #000;
+        background: url("Assets/Images/Sections/About/about-718x854-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -335,6 +421,33 @@ section.about p {
         top: 250px;
         left: 320px;
         font-size: 1.7rem;
+    }
+
+    /* Section - Offer */
+
+    section.offer {
+        background: url("Assets/Images/Sections/Offer/offer-718x854-90.jpg") center / cover no-repeat #000;
+    }
+
+    section.offer h1 {
+        top: 170px;
+        left: 50px;
+        font-size: 5rem;
+    }
+
+    section.offer p {
+        width: 300px;
+        top: 200px;
+        left: 50px;
+        font-size: 1.6rem;
+    }
+
+    section.offer button {
+        top: 250px;
+        left: 50px;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 2rem;
     }
 }
 

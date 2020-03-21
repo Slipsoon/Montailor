@@ -146,6 +146,7 @@ section.about p {
     }
 
     section.about h1 {
+        width: 120px;
         top: 120px;
         left: 150px;
         font-size: 3.5rem;
@@ -153,7 +154,7 @@ section.about p {
 
     section.about p {
         width: 170px;
-        height: 400px;
+        height: 300px;
         top: 160px;
         left: 130px;
         font-size: 0.9rem;
@@ -202,8 +203,9 @@ section.about p {
     }
 
     section.about h1 {
+        width: 130px;
         top: 140px;
-        left: 190px
+        left: 190px;
     }
 
     section.about p {
@@ -256,6 +258,7 @@ section.about p {
     }
 
     section.about h1 {
+        width: 140px;
         top: 140px;
         left: 220px;
         font-size: 4.5rem;
@@ -320,6 +323,7 @@ section.about p {
     }
 
     section.about h1 {
+        width: 160px;
         top: 180px;
         left: 520px;
         font-size: 5rem;

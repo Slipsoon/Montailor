@@ -136,7 +136,8 @@ section.offer p {
     font-size: 0.9rem;
 }
 
-section.offer button {
+section.offer button,
+section.gallery button {
     position: relative;
     top: 150px;
     left: 30px;
@@ -150,6 +151,50 @@ section.offer button {
     padding: 10px;
     border-radius: 10px;
     color: white;
+}
+
+/* Section - Gallery & gallery-bg */
+
+section.gallery-bg {
+    opacity: 0.75;
+}
+
+section.gallery {
+    position: relative;
+    height: 0;
+    top: -100vh;
+}
+
+section.gallery h1 {
+    position: relative;
+    width: 150px;
+    top: 100px;
+    left: 50vw;
+    transform: translateX(-50%);
+    color: rgb(243, 244, 246);
+    text-shadow: 5px 5px 5px #000;
+    font-size: 3.5rem;
+}
+
+section.gallery p {
+    position: relative;
+    width: 250px;
+    top: 120px;
+    left: 50vw;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-style: italic;
+    text-shadow: 2px 2px 10px black;
+    font-size: 1.1rem;
+}
+
+section.gallery button {
+    left: 50vw;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 1.3rem;
 }
 
 /* iPhone 5/SE Support - (320px x 568px) */
@@ -201,6 +246,12 @@ section.offer button {
 
     section.offer {
         background: url("Assets/Images/Sections/Offer/offer-320x568-90.jpg") center / cover no-repeat #000;
+    }
+
+    /* Section - Gallery & gallery-bg */
+
+    section.gallery-bg {
+        background: url("Assets/Images/Sections/Gallery/gallery-320x568-90.jpg") center / cover no-repeat;
     }
 }
 
@@ -277,6 +328,29 @@ section.offer button {
     section.offer button {
         top: 170px;
         font-size: 1.2rem;
+    }
+
+    /* Section - Gallery & gallery-bg */
+
+    section.gallery-bg {
+        background: url("Assets/Images/Sections/Gallery/gallery-375x667-90.jpg") center / cover no-repeat;
+    }
+
+    section.gallery h1 {
+        top: 120px;
+        font-size: 4rem;
+    }
+
+    section.gallery p {
+        width: 300px;
+        top: 150px;
+        font-size: 1.3rem;
+    }
+
+    section.gallery button {
+        top: 180px;
+        padding: 15px 25px;
+        font-size: 1.5rem;
     }
 }
 
@@ -356,6 +430,29 @@ section.offer button {
     section.offer button {
         top: 200px;
         font-size: 1.4rem;
+    }
+
+    /* Section - Gallery & gallery-bg */
+
+    section.gallery-bg {
+        background: url("Assets/Images/Sections/Gallery/gallery-414x736-90.jpg") center / cover no-repeat;
+    }
+
+    section.gallery h1 {
+        top: 140px;
+        font-size: 4.5rem;
+    }
+
+    section.gallery p {
+        width: 320px;
+        top: 170px;
+        font-size: 1.4rem;
+    }
+
+    section.gallery button {
+        top: 200px;
+        padding: 15px 35px;
+        font-size: 1.5rem;
     }
 }
 
@@ -447,6 +544,30 @@ section.offer button {
         left: 50px;
         padding: 20px;
         border-radius: 20px;
+        font-size: 2rem;
+    }
+
+    /* Section - Gallery & gallery-bg */
+
+    section.gallery-bg {
+        background: url("Assets/Images/Sections/Gallery/gallery-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    section.gallery h1 {
+        top: 180px;
+        font-size: 6rem;
+        width: 230px;
+    }
+
+    section.gallery p {
+        width: 500px;
+        top: 220px;
+        font-size: 2rem;
+    }
+
+    section.gallery button {
+        top: 280px;
+        padding: 20px 45px;
         font-size: 2rem;
     }
 }

@@ -1,3 +1,4 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,20 @@ body {
     width: 100vw;
     height: 200vh;
     /* overflow: hidden; */
+}
+
+/* Fonts
+font-family: 'Great Vibes', cursive;
+font-family: 'Lato', sans-serif;
+ */
+
+p {
+    font-family: 'Lato', sans-serif, Arial, Helvetica;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
 }
 
 /* Navigation Section */
@@ -62,12 +77,55 @@ nav.mobile li:nth-child(2) img {
 header>div {
     height: 100vh;
     width: 100vw;
-    /* background-image: url("Assets/Images/Sections/Main/main1.jpg"); */
+}
+
+header div.img2,
+div.img3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* All Sections */
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Section - About */
+
+section.about h1,
+p {
+    color: rgb(196, 191, 187);
+}
+
+section.about h1 {
+    position: relative;
+    top: 140px;
+    left: 190px
+}
+
+section.about p {
+    position: relative;
+    width: 180px;
+    height: 350px;
+    top: 190px;
+    left: 170px;
+    text-align: center;
 }
 
 /* iPhone 5/SE Support - (320px x 568px) */
 
 @media (max-width: 359px) {
+
+    /* Navigation */
+
+    nav.mobile li:nth-child(1) img.res320x568 {
+        display: block;
+    }
+
+    /* Header */
 
     header div.img1 {
         background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
@@ -81,8 +139,24 @@ header>div {
         background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
-    nav.mobile li:nth-child(1) img.res320x568 {
-        display: block;
+    /* Section - About */
+
+    section.about {
+        background: url("Assets/Images/Sections/Main/About/about-320x568-90.jpg") center / cover no-repeat #000;
+    }
+
+    section.about h1 {
+        top: 120px;
+        left: 150px;
+        font-size: 3.5rem;
+    }
+
+    section.about p {
+        width: 170px;
+        height: 400px;
+        top: 160px;
+        left: 130px;
+        font-size: 0.9rem;
     }
 
 }
@@ -91,17 +165,7 @@ header>div {
 
 @media (min-width: 360px) and (max-width: 375px) {
 
-    header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
-    }
-
-    header div.img2 {
-        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
-    }
-
-    header div.img3 {
-        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
-    }
+    /* Navigation */
 
     nav.mobile li:nth-child(1) img.res360x640 {
         display: block;
@@ -117,11 +181,7 @@ header>div {
         width: 50px;
     }
 
-}
-
-/* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
-
-@media (min-width: 376px) and (max-width: 500px) {
+    /* Header */
 
     header div.img1 {
         background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
@@ -134,6 +194,31 @@ header>div {
     header div.img3 {
         background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
+
+    /* Section - About */
+
+    section.about {
+        background: url("Assets/Images/Sections/Main/About/about-375x667-90.jpg") center / cover no-repeat #000;
+    }
+
+    section.about h1 {
+        top: 140px;
+        left: 190px
+    }
+
+    section.about p {
+        width: 180px;
+        height: 350px;
+        top: 190px;
+        left: 170px;
+    }
+}
+
+/* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
+
+@media (min-width: 376px) and (max-width: 500px) {
+
+    /* Navigation */
 
     nav.mobile li:nth-child(1) img.res411x731 {
         display: block;
@@ -149,11 +234,8 @@ header>div {
         height: 50px;
         width: 50px;
     }
-}
 
-/* iPad Support / (768px x 1024px) */
-
-@media (min-width: 500px) and (max-width: 1023px) {
+    /* Header */
 
     header div.img1 {
         background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
@@ -166,6 +248,33 @@ header>div {
     header div.img3 {
         background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
+
+    /* Section - About */
+
+    section.about {
+        background: url("Assets/Images/Sections/Main/About/about-414x736-90.jpg") center / cover no-repeat #000;
+    }
+
+    section.about h1 {
+        top: 140px;
+        left: 220px;
+        font-size: 4.5rem;
+    }
+
+    section.about p {
+        width: 220px;
+        height: 350px;
+        top: 200px;
+        left: 180px;
+        font-size: 1.2rem;
+    }
+}
+
+/* iPad Support / (768px x 1024px) */
+
+@media (orientation: portrait) and (min-width: 500px) {
+
+    /* Navigation */
 
     nav.mobile li:nth-child(1) {
         left: 30px;
@@ -185,5 +294,101 @@ header>div {
         right: 30px;
         height: 50px;
         width: 50px;
+    }
+
+    /* Header */
+
+    header div.img1 {
+        /* animation: 6s changeBackground linear infinite; */
+        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
+
+    header div.img2 {
+        /* animation: 6s changeBackground 2s linear infinite; */
+        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    header div.img3 {
+        /* animation: 6s changeBackground 4s linear infinite; */
+        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    /* Section - About */
+
+    section.about {
+        background: url("Assets/Images/Sections/Main/About/about-718x854-90.jpg") center / cover no-repeat #000;
+    }
+
+    section.about h1 {
+        top: 180px;
+        left: 520px;
+        font-size: 5rem;
+    }
+
+    section.about p {
+        width: 400px;
+        height: 250px;
+        top: 250px;
+        left: 320px;
+        font-size: 1.7rem;
+    }
+}
+
+@keyframes changeBackground {
+
+    0% {
+        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
+
+    33.2% {
+        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+    }
+
+    33.3% {
+        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    66.5% {
+        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    66.6% {
+        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+    }
+
+    99.9% {
+        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+    }
+}
+
+/* Landscape orientation */
+
+@media (orientation: Landscape) and (max-width: 730px) {
+
+    nav.mobile li:nth-child(1) img.res320x568 {
+        display: block;
+    }
+
+    header div.img1 {
+        background: url("Assets/Images/Sections/Main/Img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+    }
+}
+
+@media (orientation: Landscape) and (max-width: 1023px) {
+
+    nav.mobile {
+        top: 25px;
+    }
+
+    nav.mobile li:nth-child(1) {
+        top: -20px;
+    }
+
+    nav.mobile li:nth-child(1) img.res360x640 {
+        display: block;
+    }
+
+    header div.img1 {
+        background: url("Assets/Images/Sections/Main/Img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
     }
 }

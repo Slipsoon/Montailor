@@ -102,16 +102,12 @@ p {
 
 section.about h1 {
     position: relative;
-    top: 140px;
-    left: 190px
 }
 
 section.about p {
     position: relative;
     width: 180px;
     height: 350px;
-    top: 190px;
-    left: 170px;
     text-align: center;
 }
 
@@ -507,17 +503,16 @@ section.gallery button {
     }
 
     section.about h1 {
-        width: 160px;
-        top: 180px;
-        left: 520px;
+        top: 200px;
+        left: 50vw;
+        width: 180px;
         font-size: 5rem;
     }
 
     section.about p {
-        width: 400px;
-        height: 250px;
+        width: 40vw;
         top: 250px;
-        left: 320px;
+        left: 40vw;
         font-size: 1.7rem;
     }
 

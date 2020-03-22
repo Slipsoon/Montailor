@@ -53,7 +53,8 @@ nav.mobile li:nth-child(1) {
     left: 10px;
 }
 
-nav.mobile li:nth-child(1) img {
+nav.mobile li:nth-child(1) img,
+div.contact-logo img {
     display: none;
 }
 
@@ -194,13 +195,148 @@ section.gallery button {
     font-size: 1.3rem;
 }
 
+/* Footer - Contact */
+
+footer {
+    background-color: rgb(64, 64, 64);
+    box-sizing: content-box;
+}
+
+footer h1,
+h2 {
+    color: rgb(201, 157, 124);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.contact-logo img {
+    position: relative;
+    top: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    line-height: 50px;
+}
+
+footer h2:nth-of-type(4) {
+    line-height: 25px;
+    padding: 10px 0;
+}
+
+footer h2:last-of-type {
+    width: 130px;
+}
+
+footer div.contact-info {
+    position: relative;
+    top: 20px;
+}
+
+footer div.titles {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 80px;
+    text-align: center;
+}
+
+footer div.details {
+    position: relative;
+    width: 200px;
+    top: -250px;
+    left: 110px;
+    text-align: center;
+    line-height: 49px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(196, 191, 187);
+    cursor: pointer;
+    font-family: 'Lato', sans-serif, Arial, Helvetica;
+}
+
+footer div.details p:nth-of-type(1) {
+    width: 150px;
+    padding-left: 25px;
+    line-height: 25px;
+}
+
+footer div.details p:nth-of-type(2) {
+    width: 180px;
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+footer form {
+    width: 100vw;
+    margin-top: -180px;
+    padding-bottom: 20px;
+}
+
+footer form input,
+textarea,
+label {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer form label {
+    font-family: 'Great Vibes', cursive, Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    color: rgb(201, 157, 124);
+}
+
+footer form input,
+textarea {
+    background-color: rgb(225, 213, 195);
+    font-family: 'Lato', sans-serif, Arial, Helvetica;
+    font-style: italic;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+footer form input {
+    padding: 10px 25px;
+}
+
+footer form textarea {
+    padding: 10px;
+}
+
+footer form input:last-child {
+    padding: 10px 40px;
+    background-color: rgba(112, 112, 112, 0.3);
+    color: rgb(201, 157, 124);
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 /* iPhone 5/SE Support - (320px x 568px) */
 
 @media (max-width: 359px) {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img.res320x568 {
+    nav.mobile li:nth-child(1) img.res320x568,
+    div.contact-logo img.res320x568 {
         display: block;
     }
 
@@ -258,7 +394,8 @@ section.gallery button {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img.res360x640 {
+    nav.mobile li:nth-child(1) img.res360x640,
+    div.contact-logo img.res360x640 {
         display: block;
     }
 
@@ -349,6 +486,58 @@ section.gallery button {
         padding: 15px 25px;
         font-size: 1.5rem;
     }
+
+    /* Footer - Contact */
+
+    footer h1 {
+        padding-top: 120px;
+    }
+
+    footer div.titles {
+        width: 130px;
+        left: 10px;
+    }
+
+    footer h2 {
+        font-size: 1.3rem;
+    }
+
+    footer h2:last-child {
+        width: 150px;
+        text-align: right;
+    }
+
+    footer div.details {
+        width: 200px;
+        padding-left: 30px;
+        font-size: 1.3rem;
+    }
+
+    footer div.details p:first-child {
+        padding: 0;
+        width: auto;
+    }
+
+    footer div.details p:last-child {
+        width: auto;
+    }
+
+    footer form label {
+        font-size: 2.2rem;
+    }
+
+    footer form input {
+        font-size: 1.2rem;
+    }
+
+    footer form textarea {
+        font-size: 1.2rem;
+    }
+
+    footer form input:last-child {
+        font-size: 1.3rem;
+        padding: 10px 50px;
+    }
 }
 
 /* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
@@ -357,7 +546,8 @@ section.gallery button {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img.res411x731 {
+    nav.mobile li:nth-child(1) img.res411x731,
+    div.contact-logo img.res411x731 {
         display: block;
     }
 
@@ -451,6 +641,58 @@ section.gallery button {
         padding: 15px 35px;
         font-size: 1.5rem;
     }
+
+    /* Footer - Contact */
+
+    footer h1 {
+        padding-top: 130px;
+    }
+
+    footer div.titles {
+        width: 130px;
+        left: 20px;
+    }
+
+    footer h2 {
+        font-size: 1.4rem;
+    }
+
+    footer h2:last-child {
+        width: 150px;
+        text-align: right;
+    }
+
+    footer div.details {
+        width: 250px;
+        padding-left: 30px;
+        font-size: 1.4rem;
+    }
+
+    footer div.details p:first-child {
+        width: 200px;
+        padding-left: 25px;
+    }
+
+    footer div.details p:last-child {
+        width: auto;
+    }
+
+    footer form label {
+        font-size: 2.5rem;
+    }
+
+    footer form input {
+        font-size: 1.4rem;
+    }
+
+    footer form textarea {
+        font-size: 1.4rem;
+    }
+
+    footer form input:last-child {
+        font-size: 1.5rem;
+        padding: 10px 50px;
+    }
 }
 
 /* iPad Support / (768px x 1024px) */
@@ -463,7 +705,8 @@ section.gallery button {
         left: 30px;
     }
 
-    nav.mobile li:nth-child(1) img.res411x731 {
+    nav.mobile li:nth-child(1) img.res411x731,
+    div.contact-logo img.res411x731 {
         display: block;
     }
 
@@ -565,6 +808,76 @@ section.gallery button {
         top: 260px;
         padding: 20px 45px;
         font-size: 2rem;
+    }
+
+    /* Footer - Contact */
+
+    footer h1 {
+        font-size: 5rem;
+        padding-top: 130px;
+    }
+
+    footer div.contact-info {
+        top: 70px;
+    }
+
+    footer div.titles {
+        width: 230px;
+        left: 100px;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+        line-height: 70px;
+    }
+
+    footer h2:nth-of-type(4) {
+        line-height: 50px;
+    }
+
+    footer h2:last-child {
+        width: auto;
+        text-align: right;
+    }
+
+    footer div.details {
+        top: -405px;
+        left: 300px;
+        width: 300px;
+        padding-left: 30px;
+        font-size: 2rem;
+        line-height: 65px;
+    }
+
+    footer div.details p:first-child {
+        width: auto;
+        line-height: 50px;
+    }
+
+    footer div.details p:last-child {
+        width: auto;
+        line-height: 35px;
+    }
+
+    footer form label {
+        font-size: 3.5rem;
+    }
+
+    footer form input {
+        width: 470px;
+        /* padding: 15px 35px; */
+        font-size: 2rem;
+    }
+
+    footer form textarea {
+        width: 500px;
+        font-size: 2rem;
+    }
+
+    footer form input:last-child {
+        width: auto;
+        font-size: 2rem;
+        padding: 15px 70px;
     }
 }
 

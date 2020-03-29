@@ -230,7 +230,7 @@ footer h2 {
 
 footer h2:nth-of-type(4) {
     line-height: 25px;
-    padding: 10px 0;
+    padding: 10px 0 20px 0;
 }
 
 footer h2:last-of-type {
@@ -253,7 +253,7 @@ footer div.titles {
 footer div.details {
     position: relative;
     width: 200px;
-    top: -250px;
+    top: -260px;
     left: 110px;
     text-align: center;
     line-height: 49px;
@@ -279,9 +279,17 @@ footer div.details p:nth-of-type(2) {
     line-height: 25px;
 }
 
+footer div.details a:nth-of-type(3),
+a:nth-of-type(4) {
+    display: inline-block;
+    margin: 15px 0 0 15px;
+    width: 30px;
+    height: 30px;
+}
+
 footer form {
     width: 100vw;
-    margin-top: -180px;
+    margin-top: -230px;
     padding-bottom: 20px;
 }
 
@@ -503,11 +511,13 @@ footer form input:last-child {
     }
 
     footer h2:last-child {
+        padding-top: 5px;
         width: 150px;
         text-align: right;
     }
 
     footer div.details {
+        top: -264px;
         width: 200px;
         padding-left: 30px;
         font-size: 1.3rem;
@@ -518,8 +528,15 @@ footer form input:last-child {
         width: auto;
     }
 
-    footer div.details p:last-child {
+    footer div.details p:last-of-type {
         width: auto;
+    }
+
+    footer div.details a:nth-of-type(3),
+    a:nth-of-type(4) {
+        margin: 15px 5px 0 15px;
+        width: 40px;
+        height: 40px;
     }
 
     footer form label {
@@ -655,6 +672,7 @@ footer form input:last-child {
 
     footer h2 {
         font-size: 1.4rem;
+        line-height: 53px;
     }
 
     footer h2:last-child {
@@ -663,6 +681,7 @@ footer form input:last-child {
     }
 
     footer div.details {
+        top: -265px;
         width: 250px;
         padding-left: 30px;
         font-size: 1.4rem;
@@ -673,8 +692,15 @@ footer form input:last-child {
         padding-left: 25px;
     }
 
-    footer div.details p:last-child {
+    footer div.details p:last-of-type {
         width: auto;
+    }
+
+    footer div.details a:nth-of-type(3),
+    a:nth-of-type(4) {
+        margin: 15px 10px 0 15px;
+        width: 45px;
+        height: 45px;
     }
 
     footer form label {
@@ -841,7 +867,7 @@ footer form input:last-child {
     }
 
     footer div.details {
-        top: -405px;
+        top: -413px;
         left: 300px;
         width: 300px;
         padding-left: 30px;
@@ -854,9 +880,20 @@ footer form input:last-child {
         line-height: 50px;
     }
 
-    footer div.details p:last-child {
+    footer div.details p:last-of-type {
         width: auto;
         line-height: 35px;
+    }
+
+    footer div.details a:nth-of-type(3),
+    a:nth-of-type(4) {
+        margin: 30px 15px 0 25px;
+        width: 65px;
+        height: 65px;
+    }
+
+    footer form {
+        margin-top: -300px;
     }
 
     footer form label {
@@ -865,7 +902,6 @@ footer form input:last-child {
 
     footer form input {
         width: 470px;
-        /* padding: 15px 35px; */
         font-size: 2rem;
     }
 

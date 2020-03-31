@@ -84,6 +84,7 @@ nav.mobile-menu {
     height: 100vh;
     width: 100vw;
     background-color: rgb(56, 53, 49);
+    overflow: hidden;
 }
 
 nav.mobile-menu div.return img {
@@ -101,12 +102,12 @@ nav.mobile-menu div.menu ul {
 }
 
 nav.mobile-menu div.menu li {
-    line-height: 40px;
-    margin: 50px 0;
+    line-height: 50px;
+    margin: 40px 0;
     font-size: 2rem;
     background-color: rgb(170, 135, 108);
     color: rgb(225, 213, 195);
-    font-family: 'Lato'sans-serif;
+    font-family: 'Great Vibes', cursive;
 }
 
 /* Header Section */
@@ -241,15 +242,15 @@ footer {
 footer h1,
 h2 {
     color: rgb(201, 157, 124);
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-style: italic;
 }
 
 footer h1 {
     padding-top: 100px;
     text-align: center;
     font-size: 3rem;
+    font-family: 'Great Vibes', cursive, Arial, Helvetica, sans-serif;
+    font-style: normal;
 }
 
 div.contact-logo img {
@@ -262,6 +263,8 @@ div.contact-logo img {
 footer h2 {
     font-size: 1.2rem;
     line-height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 
 footer h2:nth-of-type(4) {
@@ -484,8 +487,8 @@ footer form input:last-child {
     }
 
     nav.mobile-menu div.menu li {
-        line-height: 50px;
-        margin: 55px 0;
+        line-height: 60px;
+        margin: 45px 0;
         font-size: 2.5rem;
     }
 
@@ -672,7 +675,7 @@ footer form input:last-child {
     }
 
     nav.mobile-menu div.menu li {
-        line-height: 55px;
+        line-height: 60px;
         margin: 50px 0;
         font-size: 2.5rem;
     }
@@ -853,7 +856,7 @@ footer form input:last-child {
         position: relative;
         top: 30px;
         left: 50vw;
-        transform: translate(-50%) scale(0.7);
+        transform: translate(-50%) scale(0.6);
     }
 
     nav.mobile-menu div.return img {
@@ -869,8 +872,8 @@ footer form input:last-child {
     }
 
     nav.mobile-menu div.menu li {
-        line-height: 70px;
-        margin: 70px 0;
+        line-height: 80px;
+        margin: 60px 0;
         font-size: 3rem;
     }
 

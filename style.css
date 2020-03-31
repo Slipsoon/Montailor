@@ -53,9 +53,11 @@ nav.mobile li:nth-child(1) {
     left: 10px;
 }
 
-nav.mobile li:nth-child(1) img,
+nav.mobile li:nth-of-type(1) img,
 div.contact-logo img {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 nav.mobile li:nth-child(2) {
@@ -75,9 +77,15 @@ nav.mobile li:nth-child(2) img {
 
 /* Navigation - Menu Section */
 
-nav.mobile-menu,
-nav.mobile-menu div.logo img {
+nav.mobile-menu {
     display: none;
+}
+
+nav.mobile-menu div.logo img {
+    position: relative;
+    top: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
 }
 
 nav.mobile-menu {
@@ -382,19 +390,17 @@ footer form input:last-child {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img.res320x568,
-    div.contact-logo img.res320x568 {
-        display: block;
+    nav.mobile li:nth-child(1) img {
+        transform: scale(0.3);
+        top: -100px;
+        left: -120px;
     }
 
     /* Navigation - Menu Section */
 
-    nav.mobile-menu div.logo img.res360x640 {
-        display: block;
-        position: relative;
-        top: 0;
-        left: 50vw;
-        transform: translate(-50%);
+    nav.mobile-menu div.logo img {
+        width: 162px;
+        height: 126px;
     }
 
     /* Header */
@@ -443,6 +449,13 @@ footer form input:last-child {
     section.gallery-bg {
         background: url("Assets/Images/Sections/Gallery/gallery-320x568-90.jpg") center / cover no-repeat;
     }
+
+    /* Footer - Contact */
+
+    div.contact-logo img {
+        width: 126px;
+        height: 98px;
+    }
 }
 
 /* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
@@ -451,9 +464,10 @@ footer form input:last-child {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img.res360x640,
-    div.contact-logo img.res360x640 {
-        display: block;
+    nav.mobile li:nth-child(1) img {
+        transform: scale(0.35);
+        top: -90px;
+        left: -100px;
     }
 
     nav.mobile {
@@ -468,12 +482,9 @@ footer form input:last-child {
 
     /* Navigation - Menu Section */
 
-    nav.mobile-menu div.logo img.res411x731 {
-        display: block;
-        position: relative;
-        top: 10px;
-        left: 50vw;
-        transform: translate(-50%);
+    nav.mobile-menu div.logo img {
+        width: 162px;
+        height: 126px;
     }
 
     nav.mobile-menu div.return img {
@@ -576,6 +587,11 @@ footer form input:last-child {
         padding-top: 120px;
     }
 
+    div.contact-logo img {
+        width: 162px;
+        height: 126px;
+    }
+
     footer div.titles {
         width: 130px;
         left: 10px;
@@ -638,9 +654,10 @@ footer form input:last-child {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img.res411x731,
-    div.contact-logo img.res411x731 {
-        display: block;
+    nav.mobile li:nth-child(1) img {
+        transform: scale(0.4);
+        top: -85px;
+        left: -100px;
     }
 
     nav.mobile {
@@ -656,12 +673,9 @@ footer form input:last-child {
 
     /* Navigation - Menu Section */
 
-    nav.mobile-menu div.logo img.res411x731 {
-        display: block;
-        position: relative;
-        top: 30px;
-        left: 50vw;
-        transform: translate(-50%);
+    nav.mobile-menu div.logo img {
+        width: 216px;
+        height: 168px;
     }
 
     nav.mobile-menu div.return img {
@@ -670,7 +684,6 @@ footer form input:last-child {
     }
 
     nav.mobile-menu div.menu ul {
-        margin: 100px 0;
         text-align: center;
     }
 
@@ -766,6 +779,11 @@ footer form input:last-child {
         padding-top: 130px;
     }
 
+    div.contact-logo img {
+        width: 180px;
+        height: 140px;
+    }
+
     footer div.titles {
         width: 130px;
         left: 20px;
@@ -832,10 +850,16 @@ footer form input:last-child {
         left: 30px;
     }
 
-    nav.mobile li:nth-child(1) img.res411x731,
+    nav.mobile li:nth-child(1) img {
+        transform: scale(0.4);
+        top: -85px;
+        left: -100px;
+    }
+
+    /* nav.mobile li:nth-child(1) img.res411x731,
     div.contact-logo img.res411x731 {
         display: block;
-    }
+    } */
 
     nav.mobile {
         top: 15px;
@@ -851,12 +875,9 @@ footer form input:last-child {
 
     /* Navigation - Menu Section */
 
-    nav.mobile-menu div.logo img.res768x1024 {
-        display: block;
-        position: relative;
-        top: 30px;
-        left: 50vw;
-        transform: translate(-50%) scale(0.6);
+    nav.mobile-menu div.logo img {
+        width: 306px;
+        height: 238px;
     }
 
     nav.mobile-menu div.return img {
@@ -970,6 +991,11 @@ footer form input:last-child {
     footer h1 {
         font-size: 5rem;
         padding-top: 130px;
+    }
+
+    div.contact-logo img {
+        width: 306px;
+        height: 238px;
     }
 
     footer div.contact-info {

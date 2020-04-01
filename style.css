@@ -86,6 +86,7 @@ nav.mobile-menu div.logo img {
     top: 10px;
     left: 50vw;
     transform: translateX(-50%);
+    animation: showMenuContent 2s ease forwards;
 }
 
 nav.mobile-menu {
@@ -102,6 +103,7 @@ nav.mobile-menu div.return img {
     width: 30px;
     height: 30px;
     transform: rotate(180deg);
+    animation: showMenuContent 2s ease forwards;
 }
 
 nav.mobile-menu div.menu ul {
@@ -116,6 +118,23 @@ nav.mobile-menu div.menu li {
     background-color: rgb(170, 135, 108);
     color: rgb(225, 213, 195);
     font-family: 'Great Vibes', cursive;
+    opacity: 0;
+}
+
+nav.mobile-menu div.menu li:nth-of-type(1) {
+    animation: showMenuContent 1.2s ease .3s forwards;
+}
+
+nav.mobile-menu div.menu li:nth-of-type(2) {
+    animation: showMenuContent 1.2s ease .6s forwards;
+}
+
+nav.mobile-menu div.menu li:nth-of-type(3) {
+    animation: showMenuContent 1.2s ease .9s forwards;
+}
+
+nav.mobile-menu div.menu li:nth-of-type(4) {
+    animation: showMenuContent 1.2s ease 1.2s forwards;
 }
 
 /* Header Section */
@@ -382,6 +401,39 @@ footer form input:last-child {
     color: rgb(201, 157, 124);
     font-size: 1.1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu - Animation */
+
+nav.mobile.animation {
+    animation: showMenu .5s ease forwards;
+}
+
+@keyframes showMenu {
+    0% {
+        height: 60px;
+        background-color: rgba(56, 53, 49, 1);
+    }
+
+    50% {
+        top: 0;
+    }
+
+    100% {
+        height: 100vh;
+        top: 0;
+        background-color: rgba(56, 53, 49, 1);
+    }
+}
+
+@keyframes showMenuContent {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* iPhone 5/SE Support - (320px x 568px) */

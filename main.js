@@ -1,24 +1,24 @@
 window.addEventListener('DOMContentLoaded', () => {
     const navBar = document.querySelector('nav.mobile');
     const logo = document.querySelector('nav.mobile ul li');
-    const menuButton = document.querySelector('nav.mobile ul li:nth-child(2)');
+    const hamburgerBtn = document.querySelector('nav.mobile ul li:nth-child(2)');
     const mobileMainPage = document.querySelector('.mobile-wrapper');
     const mobileMenu = document.querySelector('.mobile-menu');
-    const returnButton = document.querySelector('.return img');
+    const returnBtn = document.querySelector('.return img');
+    const menuContentBtns = document.querySelectorAll('nav.mobile-menu div.menu li');
 
     function animateMenu() {
-        menuButton.style.display = 'none';
+        hamburgerBtn.style.display = 'none';
         logo.style.display = 'none';
         navBar.classList.toggle('animation');
         setTimeout(showMenu, 500);
     }
 
-
     function showMenu() {
         mobileMainPage.style.display = 'none';
         mobileMenu.style.display = 'block';
         navBar.classList.toggle('animation');
-        menuButton.style.display = 'block';
+        hamburgerBtn.style.display = 'block';
         logo.style.display = 'block';
     }
 
@@ -27,6 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
         mobileMenu.style.display = 'none';
     }
 
-    returnButton.addEventListener('click', hideMenu);
-    menuButton.addEventListener('click', animateMenu);
+    menuContentBtns.forEach(menuContentBtn => {
+        menuContentBtn.addEventListener('click', hideMenu);
+    })
+
+    returnBtn.addEventListener('click', hideMenu);
+    hamburgerBtn.addEventListener('click', animateMenu);
 })

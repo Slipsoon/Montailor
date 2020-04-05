@@ -1,0 +1,148 @@
+/* Navigation - Mobile Menu */
+
+nav.mobile-menu {
+    height: auto;
+    background-color: rgb(56, 53, 49);
+}
+
+/* Menu - Category */
+
+nav.mobile-menu div.category-list ul {
+    margin: 50px 0;
+    text-align: center;
+}
+
+nav.mobile-menu div.category-list ul li {
+    color: rgb(205, 217, 200);
+    text-shadow: 1px 1px 3px #000;
+    line-height: 80px;
+    height: 80px;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    background-position-x: center;
+    opacity: 0;
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(1) {
+    background-image: url('/Assets/Images/Sections/Categories/trousers.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(2) {
+    background-image: url('/Assets/Images/Sections/Categories/skirts.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(3) {
+    background-image: url('/Assets/Images/Sections/Categories/dresses.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(4) {
+    background-image: url('/Assets/Images/Sections/Categories/suits.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(5) {
+    background-image: url('/Assets/Images/Sections/Categories/navy.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(6) {
+    background-image: url('/Assets/Images/Sections/Categories/shirts.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(7) {
+    background-image: url('/Assets/Images/Sections/Categories/blouses.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(8) {
+    background-image: url('/Assets/Images/Sections/Categories/sweaters.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(9) {
+    background-image: url('/Assets/Images/Sections/Categories/jackets.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(10) {
+    background-image: url('/Assets/Images/Sections/Categories/coates.jpg');
+}
+
+nav.mobile-menu div.category-list ul li a {
+    position: absolute;
+    display: block;
+    height: 80px;
+    width: 100vw;
+}
+
+/* Mobile Menu - Animation */
+
+nav.mobile-menu div.category-list ul li {
+    animation: showMenuContent 1.2s ease .5s forwards;
+}
+
+@keyframes showMenuContent {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* iPhone 5/SE Support - (320px x 568px) */
+
+@media (max-width: 359px) {
+    /* Menu - Category */
+
+    nav.mobile-menu div.category-list ul li {
+        background-size: 320px 80px;
+    }
+}
+
+/* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
+
+@media (min-width: 360px) and (max-width: 375px) {
+    /* Menu - Category */
+
+    nav.mobile-menu div.category-list ul li {
+        height: 90px;
+        line-height: 90px;
+        background-size: 375px 90px;
+        margin: 30px 0;
+    }
+
+    nav.mobile-menu div.category-list ul li a {
+        height: 90px;
+    }
+}
+
+/* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
+
+@media (min-width: 376px) and (max-width: 500px) {
+    /* Menu - Category */
+
+    nav.mobile-menu div.category-list ul li {
+        height: 100px;
+        line-height: 100px;
+        background-size: 414px 100px;
+    }
+
+    nav.mobile-menu div.category-list ul li a {
+        height: 100px;
+    }
+}
+
+/* iPad Support / (768px x 1024px) */
+
+@media (orientation: portrait) and (min-width: 500px) {
+    /* Menu - Category */
+
+    nav.mobile-menu div.category-list ul li {
+        height: 100px;
+        line-height: 100px;
+        background-size: cover;
+    }
+
+    nav.mobile-menu div.category-list ul li a {
+        height: 100px;
+    }
+}

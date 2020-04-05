@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const mobileMainPage = document.querySelector('.mobile-wrapper');
     const mobileMenu = document.querySelector('.mobile-menu');
     const returnBtn = document.querySelector('.return img');
-    const menuContentBtns = document.querySelectorAll('nav.mobile-menu div.menu li');
+    const menuContentBtns = document.querySelectorAll('nav.mobile-menu li');
 
     function animateMenu() {
         hamburgerBtn.style.display = 'none';

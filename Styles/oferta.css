@@ -26,43 +26,43 @@ nav.mobile-menu div.category-list ul li {
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(1) {
-    background-image: url('/Assets/Images/Sections/Categories/trousers.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/trousers.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(2) {
-    background-image: url('/Assets/Images/Sections/Categories/skirts.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/skirts.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(3) {
-    background-image: url('/Assets/Images/Sections/Categories/dresses.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/dresses.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(4) {
-    background-image: url('/Assets/Images/Sections/Categories/suits.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/suits.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(5) {
-    background-image: url('/Assets/Images/Sections/Categories/navy.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/navy.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(6) {
-    background-image: url('/Assets/Images/Sections/Categories/shirts.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/shirts.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(7) {
-    background-image: url('/Assets/Images/Sections/Categories/blouses.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/blouses.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(8) {
-    background-image: url('/Assets/Images/Sections/Categories/sweaters.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/sweaters.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(9) {
-    background-image: url('/Assets/Images/Sections/Categories/jackets.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/jackets.jpg');
 }
 
 nav.mobile-menu div.category-list ul li:nth-of-type(10) {
-    background-image: url('/Assets/Images/Sections/Categories/coates.jpg');
+    background-image: url('./Assets/Images/Sections/Categories/coates.jpg');
 }
 
 nav.mobile-menu div.category-list ul li a {

@@ -179,7 +179,7 @@ header div.img3 h1 {
 }
 
 
-/* All Sections */
+/* All sections */
 
 section {
     height: 100vh;
@@ -520,15 +520,15 @@ nav.mobile.animation {
     /* Header */
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
     header div.img2 {
-        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img3 {
-        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img1 h1 {
@@ -552,7 +552,7 @@ nav.mobile.animation {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/About/about-320x568-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/about/about-320x568-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -573,13 +573,13 @@ nav.mobile.animation {
     /* Section - Offer */
 
     section.offer {
-        background: url("Assets/Images/Sections/Offer/offer-320x568-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/offer/offer-320x568-90.jpg") center / cover no-repeat #000;
     }
 
     /* Section - Gallery & gallery-bg */
 
     section.gallery-bg {
-        background: url("Assets/Images/Sections/Gallery/gallery-320x568-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/gallery/gallery-320x568-90.jpg") center / cover no-repeat;
     }
 
     /* Footer - Contact */
@@ -638,15 +638,15 @@ nav.mobile.animation {
     /* Header */
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
     header div.img2 {
-        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img3 {
-        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img1 h1 {
@@ -671,7 +671,7 @@ nav.mobile.animation {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/About/about-375x667-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/about/about-375x667-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -690,7 +690,7 @@ nav.mobile.animation {
     /* Section - Offer */
 
     section.offer {
-        background: url("Assets/Images/Sections/Offer/offer-320x568-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/offer/offer-320x568-90.jpg") center / cover no-repeat #000;
     }
 
     section.offer h1 {
@@ -712,7 +712,7 @@ nav.mobile.animation {
     /* Section - Gallery & gallery-bg */
 
     section.gallery-bg {
-        background: url("Assets/Images/Sections/Gallery/gallery-375x667-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/gallery/gallery-375x667-90.jpg") center / cover no-repeat;
     }
 
     section.gallery h1 {
@@ -847,15 +847,15 @@ nav.mobile.animation {
     /* Header */
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
     header div.img2 {
-        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img3 {
-        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img1 h1 {
@@ -880,7 +880,7 @@ nav.mobile.animation {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/About/about-414x736-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/about/about-414x736-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -901,7 +901,7 @@ nav.mobile.animation {
     /* Section - Offer */
 
     section.offer {
-        background: url("Assets/Images/Sections/Offer/offer-414x736-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/offer/offer-414x736-90.jpg") center / cover no-repeat #000;
     }
 
     section.offer h1 {
@@ -923,7 +923,7 @@ nav.mobile.animation {
     /* Section - Gallery & gallery-bg */
 
     section.gallery-bg {
-        background: url("Assets/Images/Sections/Gallery/gallery-414x736-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/gallery/gallery-414x736-90.jpg") center / cover no-repeat;
     }
 
     section.gallery h1 {
@@ -1071,17 +1071,17 @@ nav.mobile.animation {
 
     header div.img1 {
         /* animation: 6s changeBackground linear infinite; */
-        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
     header div.img2 {
         /* animation: 6s changeBackground 2s linear infinite; */
-        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img3 {
         /* animation: 6s changeBackground 4s linear infinite; */
-        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img1 h1 {
@@ -1106,7 +1106,7 @@ nav.mobile.animation {
     /* Section - About */
 
     section.about {
-        background: url("Assets/Images/Sections/About/about-718x854-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/about/about-718x854-90.jpg") center / cover no-repeat #000;
     }
 
     section.about h1 {
@@ -1126,7 +1126,7 @@ nav.mobile.animation {
     /* Section - Offer */
 
     section.offer {
-        background: url("Assets/Images/Sections/Offer/offer-718x854-90.jpg") center / cover no-repeat #000;
+        background: url("../assets/images/sections/offer/offer-718x854-90.jpg") center / cover no-repeat #000;
     }
 
     section.offer h1 {
@@ -1153,7 +1153,7 @@ nav.mobile.animation {
     /* Section - Gallery & gallery-bg */
 
     section.gallery-bg {
-        background: url("Assets/Images/Sections/Gallery/gallery-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/gallery/gallery-718x854-90.jpg") center / cover no-repeat;
     }
 
     section.gallery h1 {
@@ -1263,27 +1263,27 @@ nav.mobile.animation {
 @keyframes changeBackground {
 
     0% {
-        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
     33.2% {
-        background: url("Assets/Images/Sections/Main/Img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
     33.3% {
-        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
     66.5% {
-        background: url("Assets/Images/Sections/Main/Img2/image2-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
     66.6% {
-        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
     99.9% {
-        background: url("Assets/Images/Sections/Main/Img3/image3-718x854-90.jpg") center / cover no-repeat;
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 }
 
@@ -1296,7 +1296,7 @@ nav.mobile.animation {
     }
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+        background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
     }
 }
 
@@ -1315,6 +1315,6 @@ nav.mobile.animation {
     }
 
     header div.img1 {
-        background: url("Assets/Images/Sections/Main/Img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+        background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
     }
 }

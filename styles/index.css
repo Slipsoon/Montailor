@@ -151,7 +151,7 @@ header>div {
 }
 
 header div.img1 {
-    opacity: 0;
+    opacity: 1;
 }
 
 header div.img2,
@@ -432,36 +432,6 @@ footer form input:last-child {
 }
 
 /* Menu - Animation */
-
-header div.img1 {
-    animation: changeMainImage 24s linear infinite;
-}
-
-header div.img2 {
-    animation: changeMainImage 24s linear 8s infinite;
-}
-
-header div.img3 {
-    animation: changeMainImage 24s linear 16s infinite;
-}
-
-@keyframes changeMainImage {
-    0% {
-        opacity: 0;
-    }
-
-    3.33% {
-        opacity: 1;
-    }
-
-    33.33% {
-        opacity: 1;
-    }
-
-    36.66% {
-        opacity: 0;
-    }
-}
 
 nav.mobile.animation {
     animation: showMenu .5s ease forwards;

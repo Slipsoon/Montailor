@@ -22,7 +22,6 @@ nav.mobile-menu div.category-list ul li {
     line-height: 80px;
     height: 80px;
     margin: 20px 0;
-    font-size: 2rem;
     font-family: 'Lato', sans-serif;
     font-style: italic;
     background-position-x: center;
@@ -69,6 +68,18 @@ nav.mobile-menu div.category-list ul li:nth-of-type(10) {
     background-image: url('../assets/images/sections/categories/coates.jpg');
 }
 
+nav.mobile-menu div.category-list ul li:nth-of-type(11) {
+    background-image: url('../assets/images/sections/categories/ironing.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(12) {
+    background-image: url('../assets/images/sections/categories/others.jpg');
+}
+
+nav.mobile-menu div.category-list ul li:nth-of-type(13) {
+    background-image: url('../assets/images/sections/categories/information3.jpg');
+}
+
 nav.mobile-menu div.category-list ul li a {
     position: absolute;
     display: block;
@@ -80,12 +91,13 @@ nav.mobile-menu div.category-list ul li a {
 
 section {
     height: auto;
-    margin: 120px 0;
+    padding-top: 100px;
 }
 
 h1 {
     text-align: center;
     font-weight: 400;
+    font-size: 5rem;
 }
 
 div.item {
@@ -98,17 +110,29 @@ div.item {
     padding: 5px 5vw;
 }
 
+section p,
+h2 {
+    color: rgb(112, 112, 122);
+    font-family: 'Lato', sans-serif, Arial, Helvetica;
+}
+
 div.item p {
     width: 60vw;
     float: left;
-    color: rgb(112, 112, 122);
-    font-family: 'Lato', sans-serif, Arial, Helvetica;
     font-weight: 700;
 }
 
 div.item p+p {
     width: 30vw;
     text-align: right;
+}
+
+section#Informacje h2 {
+    width: 90vw;
+    margin: 0 5vw;
+    padding: 20px 0;
+    text-align: center;
+    font-style: italic;
 }
 
 /* Mobile Menu - Animation */
@@ -134,13 +158,10 @@ nav.mobile-menu div.category-list ul li {
 
     nav.mobile-menu div.category-list ul li {
         background-size: 320px 80px;
+        font-size: 3rem;
     }
 
     /* Sections */
-
-    h1 {
-        font-size: 5rem;
-    }
 
     div.item {
         height: 60px;
@@ -154,6 +175,9 @@ nav.mobile-menu div.category-list ul li {
         font-size: 1.4rem;
     }
 
+    section#Informacje h2 {
+        font-size: 1.8rem;
+    }
 }
 
 /* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
@@ -166,6 +190,7 @@ nav.mobile-menu div.category-list ul li {
         line-height: 90px;
         background-size: 375px 90px;
         margin: 30px 0;
+        font-size: 3.5rem;
     }
 
     nav.mobile-menu div.category-list ul li a {
@@ -175,11 +200,11 @@ nav.mobile-menu div.category-list ul li {
     /* Sections */
 
     section {
-        margin-top: 150px;
+        padding-top: 120px;
     }
 
-    h1 {
-        font-size: 5rem;
+    section#Informacje h2 {
+        font-size: 2rem;
     }
 
     div.item p {
@@ -196,6 +221,7 @@ nav.mobile-menu div.category-list ul li {
         height: 100px;
         line-height: 100px;
         background-size: 414px 100px;
+        font-size: 4rem;
     }
 
     nav.mobile-menu div.category-list ul li a {
@@ -205,30 +231,70 @@ nav.mobile-menu div.category-list ul li {
     /* Sections */
 
     section {
-        margin-top: 150px;
+        padding-top: 140px;
+    }
+
+    section#Informacje h2 {
+        font-size: 2.2rem;
     }
 
     h1 {
         font-size: 6rem;
     }
 
+    div.item {
+        padding: 10px 5vw;
+    }
+
     div.item p {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 }
 
 /* iPad Support / (768px x 1024px) */
 
 @media (orientation: portrait) and (min-width: 500px) {
+
+    /* Menu - Logo */
+
+    div.logo {
+        height: 280px;
+    }
+
     /* Menu - Category */
 
     nav.mobile-menu div.category-list ul li {
-        height: 100px;
-        line-height: 100px;
-        background-size: cover;
+        height: 140px;
+        line-height: 140px;
+        background-size: 600px 140px;
+        background-repeat: no-repeat;
+        margin: 40px 0;
+        font-size: 5rem;
     }
 
     nav.mobile-menu div.category-list ul li a {
-        height: 100px;
+        height: 140px;
+    }
+
+    /* Sections */
+
+    section {
+        padding-top: 140px;
+    }
+
+    section#Informacje h2 {
+        font-size: 3.5rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    div.item {
+        padding: 10px 5vw;
+    }
+
+    div.item p {
+        font-size: 2.5rem;
     }
 }

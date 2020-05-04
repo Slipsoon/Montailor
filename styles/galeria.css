@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Mobile menu */
+
+nav.mobile-menu {
+    height: 100vh;
+}
+
+nav.mobile-menu div.logo {
+    height: auto;
+}
+
+nav.mobile-menu div.menu li {
+    font-size: 3.2rem;
+}
+
+/* Section - gallery */
+
+section#galeria {
+    padding-top: 120px;
+}
+
+div.category-list ul li {
+    opacity: 1;
+}
+
+/* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
+
+@media(min-width: 360px) and (max-width: 375px) {
+
+    /* Mobile menu */
+
+    nav.mobile-menu div.menu li {
+        font-size: 4rem;
+    }
+
+    /* Section - gallery */
+
+    section#galeria {
+        padding-top: 150px;
+    }
+}
+
+/* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
+
+@media (min-width: 376px) and (max-width: 500px) {
+
+    /* Mobile menu */
+
+    nav.mobile-menu div.menu li {
+        font-size: 4rem;
+    }
+
+    /* Section - gallery */
+
+    section#galeria {
+        padding-top: 170px;
+    }
+}
+
+/* iPad Support / (768px x 1024px) */
+
+@media (orientation: portrait) and (min-width: 500px) {
+
+    /* Mobile menu */
+
+    nav.mobile-menu div.menu li {
+        font-size: 4.8rem;
+    }
+
+    /* Section - gallery */
+
+    section#galeria {
+        padding-top: 200px;
+    }
+}

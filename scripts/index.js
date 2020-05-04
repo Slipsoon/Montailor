@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     const navBar = document.querySelector('nav.mobile');
-    const logo = document.querySelector('nav.mobile ul li');
-    const hamburgerBtn = document.querySelector('nav.mobile ul li:nth-child(2)');
+    const logo = document.querySelector('nav.mobile div.nav-logo');
+    const hamburgerBtn = document.querySelector('nav.mobile div.nav-menu');
     const mobileMainPage = document.querySelector('.mobile-wrapper');
     const mobileMenu = document.querySelector('.mobile-menu');
     const returnBtn = document.querySelector('.return img');

@@ -37,24 +37,26 @@ nav.mobile {
     background-color: rgba(1, 0, 0, 0.75);
 }
 
-nav.mobile li {
+div.nav-logo {
+    width: 108px;
+    height: 84px;
     position: absolute;
-    list-style: none;
+    left: 16px;
+    top: -12px;
+    background: url("/assets/logo/nav-mobile-360x280.png");
+    background-size: cover;
+    border-radius: 50%;
 }
 
-nav.mobile li:nth-child(1) {
-    top: -10px;
-    left: 10px;
-}
-
-nav.mobile li:nth-of-type(1) img,
+/* To delete 1st only */
 div.contact-logo img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-nav.mobile li:nth-child(2) {
+nav.mobile div.nav-menu {
+    position: absolute;
     top: 10px;
     right: 15px;
     height: 40px;
@@ -62,7 +64,9 @@ nav.mobile li:nth-child(2) {
     background-color: #E1D5C3;
 }
 
-nav.mobile li:nth-child(2) img {
+nav.mobile div.nav-menu img {
+    height: 20px;
+    width: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,6 +77,7 @@ nav.mobile li:nth-child(2) img {
 
 nav.mobile-menu {
     display: none;
+    height: 100vh;
 }
 
 nav.mobile-menu div.logo img {
@@ -561,20 +566,26 @@ nav.mobile.animation {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img {
-        transform: scale(0.35);
-        top: -90px;
-        left: -100px;
-    }
-
     nav.mobile {
         height: 80px;
     }
 
-    nav.mobile li:nth-child(2) {
+    div.nav-logo {
+        width: 126px;
+        height: 98px;
+        top: -9px;
+        left: 27px;
+    }
+
+    nav.mobile div.nav-menu {
         top: 15px;
         height: 50px;
         width: 50px;
+    }
+
+    nav.mobile div.nav-menu img {
+        height: 25px;
+        width: 25px;
     }
 
     /* Navigation - Menu Section */
@@ -770,21 +781,27 @@ nav.mobile.animation {
 
     /* Navigation */
 
-    nav.mobile li:nth-child(1) img {
-        transform: scale(0.4);
-        top: -85px;
-        left: -100px;
-    }
-
     nav.mobile {
         top: 15px;
         height: 90px;
     }
 
-    nav.mobile li:nth-child(2) {
+    div.nav-logo {
+        width: 144px;
+        height: 112px;
+        top: -11px;
+        left: 18px;
+    }
+
+    nav.mobile div.nav-menu {
         top: 20px;
         height: 50px;
         width: 50px;
+    }
+
+    nav.mobile div.nav-menu img {
+        height: 25px;
+        width: 25px;
     }
 
     /* Navigation - Menu Section */
@@ -981,14 +998,9 @@ nav.mobile.animation {
 
     /* Navigation */
 
+    /* To delete */
     nav.mobile li:nth-child(1) {
         left: 30px;
-    }
-
-    nav.mobile li:nth-child(1) img {
-        transform: scale(0.4);
-        top: -85px;
-        left: -100px;
     }
 
     nav.mobile {
@@ -996,11 +1008,23 @@ nav.mobile.animation {
         height: 90px;
     }
 
-    nav.mobile li:nth-child(2) {
+    div.nav-logo {
+        width: 144px;
+        height: 112px;
+        top: -11px;
+        left: 38px;
+    }
+
+    nav.mobile div.nav-menu {
         top: 20px;
         right: 30px;
         height: 50px;
         width: 50px;
+    }
+
+    nav.mobile div.nav-menu img {
+        height: 25px;
+        width: 25px;
     }
 
     /* Navigation - Menu Section */

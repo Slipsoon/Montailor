@@ -11,12 +11,12 @@ nav.mobile-menu {
 
 /* Menu - Category */
 
-nav.mobile-menu div.category-list ul {
+div.category-list ul {
     margin: 50px 0;
     text-align: center;
 }
 
-nav.mobile-menu div.category-list ul li {
+div.category-list ul li {
     color: rgb(205, 217, 200);
     text-shadow: 1px 1px 3px #000;
     line-height: 80px;
@@ -28,59 +28,59 @@ nav.mobile-menu div.category-list ul li {
     opacity: 0;
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(1) {
+div.category-list ul li:nth-of-type(1) {
     background-image: url('../assets/images/sections/categories/trousers.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(2) {
+div.category-list ul li:nth-of-type(2) {
     background-image: url('../assets/images/sections/categories/skirts.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(3) {
+div.category-list ul li:nth-of-type(3) {
     background-image: url('../assets/images/sections/categories/dresses.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(4) {
+div.category-list ul li:nth-of-type(4) {
     background-image: url('../assets/images/sections/categories/suits.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(5) {
+div.category-list ul li:nth-of-type(5) {
     background-image: url('../assets/images/sections/categories/navy.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(6) {
+div.category-list ul li:nth-of-type(6) {
     background-image: url('../assets/images/sections/categories/shirts.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(7) {
+div.category-list ul li:nth-of-type(7) {
     background-image: url('../assets/images/sections/categories/blouses.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(8) {
+div.category-list ul li:nth-of-type(8) {
     background-image: url('../assets/images/sections/categories/sweaters.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(9) {
+div.category-list ul li:nth-of-type(9) {
     background-image: url('../assets/images/sections/categories/jackets.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(10) {
+div.category-list ul li:nth-of-type(10) {
     background-image: url('../assets/images/sections/categories/coates.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(11) {
+div.category-list ul li:nth-of-type(11) {
     background-image: url('../assets/images/sections/categories/ironing.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(12) {
+div.category-list ul li:nth-of-type(12) {
     background-image: url('../assets/images/sections/categories/others.jpg');
 }
 
-nav.mobile-menu div.category-list ul li:nth-of-type(13) {
+div.category-list ul li:nth-of-type(13) {
     background-image: url('../assets/images/sections/categories/information3.jpg');
 }
 
-nav.mobile-menu div.category-list ul li a {
+div.category-list ul li a {
     position: absolute;
     display: block;
     height: 80px;
@@ -156,7 +156,7 @@ nav.mobile-menu div.category-list ul li {
 @media (max-width: 359px) {
     /* Menu - Category */
 
-    nav.mobile-menu div.category-list ul li {
+    div.category-list ul li {
         background-size: 320px 80px;
         font-size: 3rem;
     }
@@ -185,7 +185,7 @@ nav.mobile-menu div.category-list ul li {
 @media (min-width: 360px) and (max-width: 375px) {
     /* Menu - Category */
 
-    nav.mobile-menu div.category-list ul li {
+    div.category-list ul li {
         height: 90px;
         line-height: 90px;
         background-size: 375px 90px;
@@ -193,7 +193,7 @@ nav.mobile-menu div.category-list ul li {
         font-size: 3.5rem;
     }
 
-    nav.mobile-menu div.category-list ul li a {
+    div.category-list ul li a {
         height: 90px;
     }
 
@@ -217,14 +217,14 @@ nav.mobile-menu div.category-list ul li {
 @media (min-width: 376px) and (max-width: 500px) {
     /* Menu - Category */
 
-    nav.mobile-menu div.category-list ul li {
+    div.category-list ul li {
         height: 100px;
         line-height: 100px;
         background-size: 414px 100px;
         font-size: 4rem;
     }
 
-    nav.mobile-menu div.category-list ul li a {
+    div.category-list ul li a {
         height: 100px;
     }
 
@@ -263,7 +263,7 @@ nav.mobile-menu div.category-list ul li {
 
     /* Menu - Category */
 
-    nav.mobile-menu div.category-list ul li {
+    div.category-list ul li {
         height: 140px;
         line-height: 140px;
         background-size: 600px 140px;
@@ -272,7 +272,7 @@ nav.mobile-menu div.category-list ul li {
         font-size: 5rem;
     }
 
-    nav.mobile-menu div.category-list ul li a {
+    div.category-list ul li a {
         height: 140px;
     }
 

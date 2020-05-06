@@ -27,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
         mobileMenu.style.display = 'none';
     }
 
+
     menuContentBtns.forEach(menuContentBtn => {
         menuContentBtn.addEventListener('click', hideMenu);
     })

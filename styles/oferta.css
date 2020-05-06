@@ -82,7 +82,9 @@ div.category-list ul li:nth-of-type(13) {
 
 div.category-list ul li a {
     position: absolute;
-    display: block;
+    display: inline-block;
+    top: auto;
+    left: 0;
     height: 80px;
     width: 100vw;
 }

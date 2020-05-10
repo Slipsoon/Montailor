@@ -1,15 +1,10 @@
-const images = document.querySelectorAll('img');
+const images = document.querySelectorAll('section.gallery-content img');
 const navBar = document.querySelector('nav.mobile');
 const imageResize = document.querySelector('div.image-resize');
 const mobileWrapper = document.querySelector('div.mobile-wrapper');
 const exitBtn = document.querySelector('div.area');
 
-exitBtn.addEventListener('click', () => {
-    navBar.style.display = 'block';
-    imageResize.style.display = 'none';
-    const getImage = imageResize.querySelector('img');
-    imageResize.removeChild(getImage);
-})
+// Get the called img source
 
 images.forEach(image => {
     image.addEventListener("click", () => {
@@ -18,6 +13,8 @@ images.forEach(image => {
     });
 })
 
+// Create dark layer and resize image
+
 function resizeImage(setImgSrc) {
     navBar.style.display = 'none';
     imageResize.style.display = 'block';
@@ -25,3 +22,12 @@ function resizeImage(setImgSrc) {
     createImgElement.setAttribute('src', setImgSrc);
     imageResize.appendChild(createImgElement);
 }
+
+// Event for returning to web page
+
+exitBtn.addEventListener('click', () => {
+    navBar.style.display = 'block';
+    imageResize.style.display = 'none';
+    const getImage = imageResize.querySelector('img');
+    imageResize.removeChild(getImage);
+})

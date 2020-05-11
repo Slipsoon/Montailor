@@ -1282,18 +1282,171 @@ nav.mobile.animation {
 
 /* Landscape orientation */
 
-@media (orientation: Landscape) and (max-width: 730px) {
+@media (orientation: landscape) and (min-width: 500px) {
 
-    nav.mobile li:nth-child(1) img.res320x568 {
-        display: block;
+    /* Nav Section */
+
+    nav.mobile a {
+        display: none;
     }
+
+    nav.mobile {
+        top: 5px;
+        left: 0px;
+        background-color: transparent;
+    }
+
+    /* Header Section */
 
     header div.img1 {
         background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
     }
+
+    header div.img2 {
+        background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+    }
+
+    header div.img3 {
+        background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+    }
+
+    header div.img1 h1 {
+        width: 250px;
+        top: 100px;
+        left: 270px;
+        font-size: 2.2rem;
+    }
+
+    /* About Section */
+
+    section.about {
+        background: url("../assets/images/sections/about/land-about-1280x854-90.jpg") top / cover no-repeat;
+    }
+
+    section.about h1 {
+        width: 160px;
+        top: 45px;
+        left: 300px;
+    }
+
+    section.about p {
+        left: 220px;
+        top: 70px;
+        width: 330px;
+        font-size: 1rem;
+    }
+
+    /* Offer Section */
+
+    section.offer {
+        background: url("../assets/images/sections/offer/land-offer-1280x854-90.jpg") top / cover no-repeat;
+    }
+
+    section.offer h1 {
+        top: 30px;
+        left: 20px;
+    }
+
+    section.offer p {
+        left: 20px;
+        top: 60px;
+        width: 330px;
+        font-size: 1rem;
+        text-shadow: 2px 2px 5px #000;
+    }
+
+    section.offer button {
+        top: 90px;
+        left: 20px;
+    }
+
+    /* Gallery Section */
+
+    section.gallery-bg {
+        background: url("../assets/images/sections/gallery/gallery-1280x854-90.jpg") center / cover no-repeat;
+    }
+
+    section.gallery h1 {
+        top: 20px;
+    }
+
+    section.gallery p {
+        width: 400px;
+        top: 30px;
+    }
+
+    section.gallery button {
+        top: 50px;
+    }
+
+    /* Contact Section */
+
+    footer h1 {
+        padding-top: 40px;
+    }
+
+    div.contact-logo {
+        top: -50px;
+        height: 0;
+        width: 0;
+    }
+
+    div.contact-logo img {
+        width: 126px;
+        height: 98px;
+        top: -30px;
+        left: 100px;
+        transform: translate(-50%, -50%);
+    }
+
+    div.contact-info div.titles {
+        left: 100px;
+    }
+
+    div.contact-info div.titles h2 {
+        font-size: 1.4rem;
+    }
+
+    div.contact-info div.titles h2:last-child {
+        position: relative;
+        line-height: 25px;
+        width: 160px;
+        left: -30px;
+    }
+
+    div.contact-info div.details {
+        width: 215px;
+        left: 250px;
+        top: -250px;
+    }
+
+    div.contact-info div.details p,
+    a {
+        width: 215px;
+        font-size: 1.4rem;
+        padding: 0;
+    }
+
+    footer form label {
+        font-size: 2.3rem;
+    }
+
+    footer form input {
+        font-size: 1.3rem;
+    }
+
+    footer form textarea {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    footer form button {
+        font-size: 1.3rem;
+    }
+
 }
 
-@media (orientation: Landscape) and (max-width: 1023px) {
+@media (orientation: landscape) and (min-width: 1023px) {
 
     nav.mobile {
         top: 25px;

@@ -349,8 +349,7 @@ footer div.line a {
     text-align: center;
 }
 
-footer div.line:nth-of-type(1) p+p,
-footer div.line:nth-of-type(5) p {
+footer div.line:nth-of-type(1) p+p {
     line-height: 25px;
 }
 
@@ -575,6 +574,11 @@ nav.mobile.animation {
         width: 126px;
         height: 98px;
     }
+
+    footer div.line:nth-of-type(5) p {
+        line-height: 25px;
+    }
+
 }
 
 /* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
@@ -762,6 +766,10 @@ nav.mobile.animation {
     footer div.line:nth-of-type(1) p+p {
         width: 50vw;
     }
+
+    footer div.line:nth-of-type(5) p {
+        line-height: 25px;
+    }
 }
 
 /* Pixel 2 - iPhone 6/7/8 Plus Support / (411px x 731px) - (414px x 736px) */
@@ -945,6 +953,10 @@ nav.mobile.animation {
     footer form button {
         font-size: 1.5rem;
         padding: 10px 50px;
+    }
+
+    footer div.line:nth-of-type(5) p {
+        line-height: 25px;
     }
 }
 
@@ -1228,7 +1240,7 @@ nav.mobile.animation {
     }
 }
 
-/* Landscape orientation */
+/* iPhone 5/SE Support - Landscape orientation */
 
 @media (orientation: landscape) and (min-width: 500px) {
 
@@ -1347,32 +1359,37 @@ nav.mobile.animation {
         transform: translate(-50%, -50%);
     }
 
-    div.contact-info div.titles {
-        left: 100px;
+    div.contact-info div.line p:first-child {
+        font-size: 1.4rem;
+        text-align: center;
     }
 
-    div.contact-info div.titles h2 {
+    div.contact-info div.line:first-child p+p {
+        box-sizing: border-box;
+        padding: 0 10vw;
+        text-align: center;
+    }
+
+    div.contact-info div.line:nth-of-type(4) p+p {
+        box-sizing: border-box;
+        padding: 0 5vw;
+    }
+
+    div.contact-info div.line p+p,
+    div.contact-info div.line a {
         font-size: 1.4rem;
     }
 
-    div.contact-info div.titles h2:last-child {
-        position: relative;
-        line-height: 25px;
-        width: 160px;
-        left: -30px;
+    div.contact-info div.line:last-child a {
+        padding: 5px 5vw;
     }
 
-    div.contact-info div.details {
-        width: 215px;
-        left: 250px;
-        top: -250px;
+    div.contact-info div.line:last-child a:nth-of-type(1) {
+        margin-right: 10vw;
     }
 
-    div.contact-info div.details p,
-    a {
-        width: 215px;
-        font-size: 1.4rem;
-        padding: 0;
+    footer form {
+        margin-top: 30vh;
     }
 
     footer form label {
@@ -1394,21 +1411,191 @@ nav.mobile.animation {
 
 }
 
-@media (orientation: landscape) and (min-width: 1023px) {
+/* Galaxy S5 - iPhone 6/7/8 Support - Landscape orientation */
 
-    nav.mobile {
-        top: 25px;
+@media (orientation: landscape) and (min-width: 640px) {
+
+    /* Header Section */
+
+    header div.img1 h1 {
+        width: 280px;
+        left: 300px;
+        font-size: 2.5rem;
     }
 
-    nav.mobile li:nth-child(1) {
-        top: -20px;
+    /* About Section */
+
+    section.about h1 {
+        left: 350px;
     }
 
-    nav.mobile li:nth-child(1) img.res360x640 {
-        display: block;
+    section.about p {
+        width: 360px;
+        left: 250px;
+        font-size: 1.1rem;
     }
 
-    header div.img1 {
-        background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+    /* Offer Section */
+
+    section.offer h1 {
+        font-size: 3.5rem;
+    }
+
+    section.offer p {
+        width: 300px;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    /* Gallery Section */
+
+    section.gallery h1 {
+        font-size: 4rem;
+    }
+
+    section.gallery p {
+        font-size: 1.2rem;
+    }
+
+    section.gallery button {
+        padding: 15px 25px;
+        top: 60px;
+        font-size: 1.4rem;
+    }
+
+    /* Contact Section */
+
+    footer h1 {
+        padding-top: 60px;
+        font-size: 4rem;
+    }
+
+    div.contact-logo img {
+        height: 112px;
+        width: 140px;
+        top: -50px;
+    }
+
+    div.contact-info div.line p:first-child {
+        font-size: 1.5rem;
+    }
+
+    div.contact-info div.line p:last-child,
+    div.contact-info div.line a {
+        font-size: 1.5rem;
+    }
+
+    div.contact-info div.line:nth-of-type(1) p:last-child {
+        padding: 0 12vw;
+    }
+
+    div.contact-info div.line:nth-of-type(4) p:last-child {
+        padding: 0 7vw;
+    }
+
+    div.contact-info div.line:nth-of-type(5) a {
+        height: 45px;
+        width: 45px;
+    }
+
+    footer form label {
+        font-size: 2.6rem;
+    }
+
+    footer form input {
+        font-size: 1.6rem;
+    }
+
+    footer form textarea {
+        font-size: 1.4rem;
+    }
+
+    footer form button {
+        font-size: 1.5rem;
+    }
+
+    /* Pixel 2 - iPhone 6/7/8 Plus Support - Landscape orientation */
+
+    @media (orientation: landscape) and (min-width: 736px) {
+
+        /* Header section */
+
+        header div.img1 h1 {
+            width: 320px;
+            top: 120px;
+            left: 350px;
+            font-size: 2.8rem;
+        }
+
+        /* About section */
+
+        section.about h1 {
+            top: 80px;
+            left: 430px;
+            font-size: 4.5rem;
+        }
+
+        section.about p {
+            width: 400px;
+            left: 300px;
+            top: 100px;
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+
+        /* Offer section */
+
+        section.offer h1 {
+            font-size: 4rem;
+        }
+
+        section.offer p {
+            font-size: 1.3rem;
+        }
+
+        section.offer button {
+            font-size: 1.2rem;
+            padding: 15px;
+        }
+
+        /* Gallery section */
+
+        section.gallery h1 {
+            font-size: 4.5rem;
+        }
+
+        section.gallery p {
+            width: 450px;
+            font-size: 1.3rem;
+        }
+
+        section.gallery button {
+            font-size: 1.5rem;
+            padding: 15px 30px;
+        }
+
+        /* Contact Section */
+
+        footer h1 {
+            font-size: 4.5rem;
+        }
+
+        footer div.contact-logo img {
+            height: 128px;
+            width: 162px;
+        }
+
+        div.contact-info div.line p:first-child {
+            font-size: 1.6rem;
+        }
+
+        div.contact-info div.line p:last-child,
+        div.contact-info div.line a {
+            font-size: 1.6rem;
+        }
+
+        div.contact-info div.line:nth-of-type(4) p:last-child {
+            padding: 0 9vw;
+        }
     }
 }

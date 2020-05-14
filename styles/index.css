@@ -1244,6 +1244,27 @@ nav.mobile.animation {
 
 @media (orientation: landscape) and (min-width: 500px) {
 
+    /* Menu Section */
+
+    nav.mobile-menu {
+        height: auto;
+    }
+
+    nav.mobile-menu img {
+        width: 180px;
+        height: 140px;
+    }
+
+    nav.mobile-menu div.return img {
+        height: 35px;
+        width: 35px;
+    }
+
+    nav.mobile-menu div.menu li {
+        line-height: 60px;
+        font-size: 2.5rem;
+    }
+
     /* Nav Section */
 
     nav.mobile a {
@@ -1415,6 +1436,18 @@ nav.mobile.animation {
 
 @media (orientation: landscape) and (min-width: 640px) {
 
+    /* Menu / Nav Section */
+
+    nav.mobile div.nav-menu {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav.mobile div.nav-menu img {
+        width: 25px;
+        height: 25px;
+    }
+
     /* Header Section */
 
     header div.img1 h1 {
@@ -1518,6 +1551,18 @@ nav.mobile.animation {
 
     @media (orientation: landscape) and (min-width: 736px) {
 
+        /* Menu / Nav Section */
+
+        nav.mobile div.nav-menu {
+            width: 55px;
+            height: 55px;
+        }
+
+        nav.mobile div.nav-menu img {
+            width: 30.5px;
+            height: 30.5px;
+        }
+
         /* Header section */
 
         header div.img1 h1 {
@@ -1596,6 +1641,22 @@ nav.mobile.animation {
 
         div.contact-info div.line:nth-of-type(4) p:last-child {
             padding: 0 9vw;
+        }
+
+        footer form label {
+            font-size: 2.8rem;
+        }
+
+        footer form input {
+            width: 300px;
+        }
+
+        footer form textarea {
+            width: 350px;
+        }
+
+        footer form button {
+            font-size: 1.6rem;
         }
     }
 }

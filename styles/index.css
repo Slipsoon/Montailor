@@ -1546,117 +1546,263 @@ nav.mobile.animation {
     footer form button {
         font-size: 1.5rem;
     }
+}
 
-    /* Pixel 2 - iPhone 6/7/8 Plus Support - Landscape orientation */
+/* Pixel 2 - iPhone 6/7/8 Plus Support - Landscape orientation */
 
-    @media (orientation: landscape) and (min-width: 736px) {
+@media (orientation: landscape) and (min-width: 736px) {
 
-        /* Menu / Nav Section */
+    /* Menu / Nav Section */
 
-        nav.mobile div.nav-menu {
-            width: 55px;
-            height: 55px;
-        }
+    nav.mobile div.nav-menu {
+        width: 55px;
+        height: 55px;
+    }
 
-        nav.mobile div.nav-menu img {
-            width: 30.5px;
-            height: 30.5px;
-        }
+    nav.mobile div.nav-menu img {
+        width: 30.5px;
+        height: 30.5px;
+    }
 
-        /* Header section */
+    /* Header section */
 
-        header div.img1 h1 {
-            width: 320px;
-            top: 120px;
-            left: 350px;
-            font-size: 2.8rem;
-        }
+    header div.img1 h1 {
+        width: 320px;
+        top: 120px;
+        left: 350px;
+        font-size: 2.8rem;
+    }
 
-        /* About section */
+    /* About section */
 
-        section.about h1 {
-            top: 80px;
-            left: 430px;
-            font-size: 4.5rem;
-        }
+    section.about h1 {
+        top: 80px;
+        left: 430px;
+        font-size: 4.5rem;
+    }
 
-        section.about p {
-            width: 400px;
-            left: 300px;
-            top: 100px;
-            font-size: 1.3rem;
-            font-style: italic;
-        }
+    section.about p {
+        width: 400px;
+        left: 300px;
+        top: 100px;
+        font-size: 1.3rem;
+        font-style: italic;
+    }
 
-        /* Offer section */
+    /* Offer section */
 
-        section.offer h1 {
-            font-size: 4rem;
-        }
+    section.offer h1 {
+        font-size: 4rem;
+    }
 
-        section.offer p {
-            font-size: 1.3rem;
-        }
+    section.offer p {
+        font-size: 1.3rem;
+    }
 
-        section.offer button {
-            font-size: 1.2rem;
-            padding: 15px;
-        }
+    section.offer button {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
 
-        /* Gallery section */
+    /* Gallery section */
 
-        section.gallery h1 {
-            font-size: 4.5rem;
-        }
+    section.gallery h1 {
+        font-size: 4.5rem;
+    }
 
-        section.gallery p {
-            width: 450px;
-            font-size: 1.3rem;
-        }
+    section.gallery p {
+        width: 450px;
+        font-size: 1.3rem;
+    }
 
-        section.gallery button {
-            font-size: 1.5rem;
-            padding: 15px 30px;
-        }
+    section.gallery button {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
 
-        /* Contact Section */
+    /* Contact Section */
 
-        footer h1 {
-            font-size: 4.5rem;
-        }
+    footer h1 {
+        font-size: 4.5rem;
+    }
 
-        footer div.contact-logo img {
-            height: 128px;
-            width: 162px;
-        }
+    footer div.contact-logo img {
+        height: 128px;
+        width: 162px;
+    }
 
-        div.contact-info div.line p:first-child {
-            font-size: 1.6rem;
-        }
+    div.contact-info div.line p:first-child {
+        font-size: 1.6rem;
+    }
 
-        div.contact-info div.line p:last-child,
-        div.contact-info div.line a {
-            font-size: 1.6rem;
-        }
+    div.contact-info div.line p:last-child,
+    div.contact-info div.line a {
+        font-size: 1.6rem;
+    }
 
-        div.contact-info div.line:nth-of-type(4) p:last-child {
-            padding: 0 9vw;
-        }
+    div.contact-info div.line:nth-of-type(4) p:last-child {
+        padding: 0 9vw;
+    }
 
-        footer form label {
-            font-size: 2.8rem;
-        }
+    footer form label {
+        font-size: 2.8rem;
+    }
 
-        footer form input {
-            width: 300px;
-        }
+    footer form input {
+        width: 300px;
+    }
 
-        footer form textarea {
-            width: 350px;
-        }
+    footer form textarea {
+        width: 350px;
+    }
 
-        footer form button {
-            font-size: 1.6rem;
-        }
+    footer form button {
+        font-size: 1.6rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 935px) {
+
+    /* Wrapper Section */
+
+    div.mobile-wrapper {
+        background-color: #fff;
+    }
+
+    /* Header Section */
+
+    header div.img1 h1 {
+        width: 450px;
+        top: 20vh;
+        left: 60vh;
+        font-size: 4rem;
+    }
+
+    /* About Section */
+
+    section.about h1 {
+        width: 250px;
+        top: 20vh;
+        left: 75vh;
+        font-size: 6rem;
+    }
+
+    section.about p {
+        width: 550px;
+        top: 30vh;
+        left: 50vh;
+        font-size: 1.8rem;
+    }
+
+    /* Offer Section */
+
+    section.offer h1 {
+        font-size: 6rem;
+    }
+
+    section.offer p {
+        top: 80px;
+        font-size: 1.6rem;
+    }
+
+    section.offer button {
+        top: 120px;
+        font-size: 1.5rem;
+    }
+
+    /* Gallery Section */
+
+    section.gallery h1 {
+        width: 170px;
+        top: 80px;
+        left: 85vw;
+    }
+
+    section.gallery p {
+        width: 300px;
+        top: 20vh;
+        left: 85vw;
+        text-shadow: none;
+        color: #000;
+        font-size: 1.4rem;
+    }
+
+    section.gallery button {
+        top: 30vh;
+        left: 85vw;
+        font-size: 1.7rem;
+    }
+
+    section.gallery-bg {
+        width: 70vw;
+        opacity: 1;
+        background-size: cover;
+    }
+
+    /* Contact Section */
+
+    footer div.contact-logo img {
+        width: 180px;
+        top: 0;
+        left: 150px;
+    }
+
+    footer div.contact-info {
+        padding-left: 5vw;
+        width: 50vw;
+        top: 150px;
+    }
+
+    footer div.line {
+        padding: 15px 0;
+        width: 45vw;
+    }
+
+    footer div.line:nth-of-type(4) {
+        padding: 0;
+    }
+
+    div.contact-info div.line:nth-of-type(1) p:last-child,
+    div.contact-info div.line:nth-of-type(4) p:last-child,
+    div.contact-info div.line:last-child a {
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    div.contact-info div.line:nth-of-type(1) p:last-child {
+        box-sizing: content-box;
+        padding-right: 20px;
+        width: 20vw;
+    }
+
+    div.contact-info div.line:nth-of-type(4) p:last-child {
+        width: 25vw;
+    }
+
+    div.contact-info div.line p:first-child {
+        width: 20vw;
+        text-align: left;
+    }
+
+    div.contact-info div.line p:last-child,
+    div.contact-info div.line a {
+        width: 25vw;
+    }
+
+    div.contact-info div.line:last-child a {
+        box-sizing: content-box;
+        padding: 0 15px;
+    }
+
+    div.contact-info div.line:last-child a:nth-of-type(1) {
+        margin-right: 5vw;
+    }
+
+    footer form {
+        width: 50vw;
+        margin-top: 0;
+        position: relative;
+        top: -52vh;
+        left: 25vw;
     }
 }

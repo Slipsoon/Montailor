@@ -8,8 +8,8 @@
 
 body {
     background-color: #E1D5C3;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    height: auto;
 }
 
 p {
@@ -148,7 +148,7 @@ nav.mobile-menu div.menu li a {
 
 header>div {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
 }
 
 header div.img1 {
@@ -184,7 +184,7 @@ header div.img3 h1 {
 
 section {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
 }
 
 /* Section - About */
@@ -1661,7 +1661,7 @@ nav.mobile.animation {
     }
 }
 
-@media (orientation: landscape) and (min-width: 935px) {
+@media (min-width: 935px) {
 
     /* Wrapper Section */
 
@@ -1669,12 +1669,22 @@ nav.mobile.animation {
         background-color: #fff;
     }
 
+    /* Menu Section */
+
+    nav.mobile {
+        width: 98vw;
+    }
+
+    nav.mobile-menu {
+        height: 100vh;
+    }
+
     /* Header Section */
 
     header div.img1 h1 {
         width: 450px;
-        top: 20vh;
-        left: 60vh;
+        top: 25vh;
+        left: 50vw;
         font-size: 4rem;
     }
 
@@ -1683,14 +1693,14 @@ nav.mobile.animation {
     section.about h1 {
         width: 250px;
         top: 20vh;
-        left: 75vh;
+        left: 55vw;
         font-size: 6rem;
     }
 
     section.about p {
         width: 550px;
         top: 30vh;
-        left: 50vh;
+        left: 40vw;
         font-size: 1.8rem;
     }
 
@@ -1714,21 +1724,21 @@ nav.mobile.animation {
 
     section.gallery h1 {
         width: 170px;
-        top: 80px;
+        top: 70px;
         left: 85vw;
     }
 
     section.gallery p {
-        width: 300px;
+        width: 250px;
         top: 20vh;
         left: 85vw;
         text-shadow: none;
         color: #000;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     section.gallery button {
-        top: 30vh;
+        top: 25vh;
         left: 85vw;
         font-size: 1.7rem;
     }
@@ -1742,7 +1752,8 @@ nav.mobile.animation {
     /* Contact Section */
 
     footer div.contact-logo img {
-        width: 180px;
+        height: 150px;
+        width: 190px;
         top: 0;
         left: 150px;
     }
@@ -1800,11 +1811,11 @@ nav.mobile.animation {
 
     footer#contact {
         height: auto;
-        max-height: 160vh;
+        max-height: 125vw;
     }
 
     footer form {
-        width: 50vw;
+        width: 45vw;
         margin-top: 0;
         position: relative;
         top: -52vh;
@@ -1814,7 +1825,7 @@ nav.mobile.animation {
     /* Google Map Section */
 
     footer div.map {
-        width: 100vw;
+        max-width: 100vw;
         position: relative;
         top: -50vh;
         left: 0;
@@ -1824,3 +1835,254 @@ nav.mobile.animation {
         padding: 0 0 30px 0;
     }
 }
+
+@media (min-width: 1280px) and (min-height: 500px) {
+
+    /* Header Section */
+
+    header div.img1 {
+        background-position-y: center;
+    }
+
+    header div.img1 h1 {
+        top: 25vh;
+        left: 50vw;
+    }
+
+    /* About Section */
+
+    section.about h1 {
+        left: 60vw;
+    }
+
+    section.about p {
+        left: 45vw;
+    }
+
+    /* Offer Section */
+
+    section.offer p {
+        width: 400px;
+        font-size: 1.7rem;
+    }
+
+    section.offer button {
+        top: 20vh;
+        font-size: 1.6rem;
+    }
+
+    /* Gallery Section */
+
+    section.gallery h1 {
+        top: 5vh;
+    }
+
+    section.gallery p {
+        width: 25vw;
+        top: 12vh;
+        font-size: 1.5rem;
+    }
+
+    section.gallery button {
+        top: 18vh;
+        font-size: 1.8rem;
+    }
+
+    /* Contact Section */
+
+    footer#contact {
+        max-height: 105vw;
+    }
+
+    /* Logo */
+
+    footer div.contact-logo img {
+        height: 170px;
+        width: 220px;
+        left: 15vw;
+    }
+
+    div.contact-info div.line p:first-child,
+    div.contact-info div.line p:last-child,
+    div.contact-info div.line a {
+        font-size: 1.7rem;
+    }
+
+    div.contact-info div.line:nth-of-type(4) p:last-child {
+        width: 23vw;
+    }
+
+    div.contact-info div.line:nth-of-type(5) a {
+        height: 50px;
+        width: 50px;
+    }
+
+    footer form {
+        top: -55vh;
+        width: 40vw;
+        left: 27vw;
+    }
+}
+
+@media (min-width: 1280px) and (min-height: 650px) {
+
+    /* Contact Section */
+
+    footer#contact {
+        max-height: 100vw;
+    }
+
+    footer form {
+        top: -25vw;
+    }
+}
+
+@media (min-width: 1280px) and (min-height: 850px) {
+
+    /* Header Section */
+
+    header div.img1 h1 {
+        width: 500px;
+        font-size: 4.5rem;
+    }
+
+    /* About Section */
+
+    section.about h1 {
+        left: 58vw;
+        font-size: 7rem;
+    }
+
+    section.about p {
+        width: 600px;
+        font-size: 2rem;
+    }
+
+    /* Offer Section */
+
+    section.offer h1 {
+        font-size: 7rem;
+    }
+
+    section.offer p {
+        width: 350px;
+        font-size: 1.8rem;
+    }
+
+    section.offer button {
+        top: 15vh;
+    }
+
+    /* Gallery Section */
+
+    section.gallery h1 {
+        font-size: 5rem;
+    }
+
+    section.gallery p {
+        font-size: 1.8rem;
+    }
+
+    section.gallery button {
+        font-size: 2rem;
+    }
+
+    /* Contact Section */
+
+    footer#contact {
+        max-height: 100vw;
+    }
+
+    footer form {
+        top: -28vw;
+    }
+
+    footer div.map {
+        top: -28vw;
+    }
+}
+
+@media (min-width: 1360px) {
+
+    /* Header Section */
+
+    header div.img1 {
+        background: url("../assets/images/sections/main/img1/land-image1-1920x1081-90.jpg") center / cover no-repeat;
+    }
+
+    /* Section About */
+
+    section.about {
+        background: url("../assets/images/sections/about/land-about-1920x1281.jpg") top / cover no-repeat;
+    }
+
+    section.about h1 {
+        left: 60vw;
+    }
+
+    section.about p {
+        left: 48vw;
+    }
+
+    /* Contact Section */
+
+    footer#contact {
+        max-height: 92vw;
+    }
+
+    div.contact-info div.line:nth-of-type(1) p:last-child {
+        padding-right: 35px;
+        width: 19vw;
+    }
+
+    div.contact-info div.line:nth-of-type(4) p:last-child {
+        padding-right: 35px;
+        width: 22vw;
+    }
+
+    div.contact-info div.line:last-child a:nth-of-type(1) {
+        margin-right: 6.5vw;
+    }
+
+    footer div.map {
+        top: -55vh;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* Gallery Section */
+
+    footer#contact {
+        max-height: 90vw;
+    }
+
+    section.gallery h1 {
+        font-size: 5rem;
+    }
+
+    section.gallery p {
+        width: 21vw;
+        font-size: 1.6rem;
+    }
+
+    section.gallery button {
+        top: 20vh;
+        font-size: 1.9rem;
+    }
+
+    div.contact-info div.line:nth-of-type(1) p:last-child {
+        width: 18vw;
+        padding-right: 45px;
+    }
+
+    footer form {
+        top: -23vw;
+    }
+
+    footer div.map {
+        top: -22vw;
+    }
+}
+
+@media (min-width: 1600px) and (min-height: 700px) {}

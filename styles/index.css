@@ -60,6 +60,7 @@ nav.mobile div.nav-menu {
     right: 15px;
     height: 40px;
     width: 40px;
+    cursor: pointer;
     background-color: #E1D5C3;
 }
 
@@ -445,6 +446,7 @@ footer form button {
     color: rgb(201, 157, 124);
     font-size: 1.1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
 }
 
 /* Menu - Animation */
@@ -2024,6 +2026,18 @@ nav.mobile.animation {
         left: 48vw;
     }
 
+    /* Offer Section */
+
+    section.offer {
+        background: url("../assets/images/sections/offer/land-offer-1920x1080.jpg") top / cover no-repeat;
+    }
+
+    /* Gallery Section */
+
+    section.gallery-bg {
+        background: url("../assets/images/sections/gallery/land-gallery-1920x1280.jpg") center / cover no-repeat;
+    }
+
     /* Contact Section */
 
     footer#contact {
@@ -2085,4 +2099,110 @@ nav.mobile.animation {
     }
 }
 
-@media (min-width: 1600px) and (min-height: 700px) {}
+@media (min-width: 1600px) {
+
+    /* Gallery Section */
+
+    section.gallery p {
+        font-size: 1.7rem;
+    }
+
+    /* Contact Section */
+
+    footer#contact {
+        max-height: 80vw;
+    }
+
+    div.contact-info div.line:first-child p:last-child {
+        width: 16vw;
+        padding-right: 70px;
+    }
+
+    div.contact-info div.line:nth-of-type(4) p:last-child {
+        width: 21vw;
+        padding-right: 60px;
+    }
+
+    div.contact-info div.line:last-child a:nth-of-type(1) {
+        margin-right: 7vw;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    /* Offer Section */
+
+    section.offer p {
+        top: 10vh;
+        font-size: 1.9rem;
+    }
+
+    section.offer button {
+        top: 18vh;
+        font-size: 1.8rem;
+    }
+
+    /* Gallery Section */
+
+    section.gallery h1 {
+        left: 83vw;
+        top: 10vh;
+        font-size: 6rem;
+    }
+
+    section.gallery p {
+        top: 17vh;
+    }
+
+    section.gallery button {
+        top: 25vh;
+        font-size: 2rem;
+    }
+
+    /* Contact Section */
+
+    footer h1 {
+        font-size: 5rem;
+    }
+
+    footer#contact {
+        max-height: 75vw;
+    }
+
+    div.contact-info div.line:first-child p:last-child {
+        width: 15vw;
+        padding-right: 80px;
+    }
+}
+
+@media (min-width: 1900px) and (min-height: 900px) {
+
+    /* Contact Section */
+
+    footer#contact {
+        max-height: 67vw;
+    }
+
+    div.contact-info div.line:first-child p:last-child {
+        width: 13vw;
+        padding-right: 110px;
+    }
+
+    div.contact-info div.line:nth-of-type(4) p:last-child {
+        width: 19vw;
+        padding-right: 100px;
+    }
+
+    div.contact-info div.line:last-child a:nth-of-type(1) {
+        margin-right: 8vw;
+        cursor: pointer;
+    }
+
+    footer form {
+        top: -18vw;
+    }
+
+    footer div.map {
+        top: -18vw;
+    }
+}

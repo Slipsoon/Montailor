@@ -374,7 +374,7 @@ footer div.line:nth-of-type(4) p+p {
 footer div.line:nth-of-type(5) a {
     width: 40px;
     height: 40px;
-    padding: 5px 7vw;
+    margin: 5px 7vw;
     display: inline-block;
     text-align: center;
 }
@@ -507,7 +507,11 @@ nav.mobile.animation {
 
     /* Header */
 
-    header div.img1 {
+    .webp header div.img1 {
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.webp") center bottom / contain no-repeat #000;
+    }
+
+    .no-webp header div.img1 {
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
@@ -637,7 +641,11 @@ nav.mobile.animation {
 
     /* Header */
 
-    header div.img1 {
+    .webp header div.img1 {
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.webp") center bottom / contain no-repeat #000;
+    }
+
+    .no-webp header div.img1 {
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
@@ -827,7 +835,11 @@ nav.mobile.animation {
 
     /* Header */
 
-    header div.img1 {
+    .webp header div.img1 {
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.webp") center bottom / contain no-repeat #000;
+    }
+
+    .no-webp header div.img1 {
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
@@ -1030,7 +1042,7 @@ nav.mobile.animation {
 
     header div.img1 {
         /* animation: 6s changeBackground linear infinite; */
-        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.webp") center bottom / contain no-repeat #000;
     }
 
     header div.img2 {
@@ -1218,11 +1230,11 @@ nav.mobile.animation {
 @keyframes changeBackground {
 
     0% {
-        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.webp") center bottom / contain no-repeat #000;
     }
 
     33.2% {
-        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.webp") center bottom / contain no-repeat #000;
     }
 
     33.3% {
@@ -1403,12 +1415,8 @@ nav.mobile.animation {
         font-size: 1.4rem;
     }
 
-    div.contact-info div.line:last-child a {
-        padding: 5px 5vw;
-    }
-
     div.contact-info div.line:last-child a:nth-of-type(1) {
-        margin-right: 10vw;
+        margin-right: 13vw;
     }
 
     footer form {
@@ -1764,6 +1772,7 @@ nav.mobile.animation {
         padding-left: 5vw;
         width: 50vw;
         top: 150px;
+        z-index: 10;
     }
 
     footer div.line {
@@ -1803,8 +1812,7 @@ nav.mobile.animation {
     }
 
     div.contact-info div.line:last-child a {
-        box-sizing: content-box;
-        padding: 0 15px;
+        margin: 0 5vw 0 0;
     }
 
     div.contact-info div.line:last-child a:nth-of-type(1) {
@@ -2196,6 +2204,10 @@ nav.mobile.animation {
     div.contact-info div.line:last-child a:nth-of-type(1) {
         margin-right: 8vw;
         cursor: pointer;
+    }
+
+    div.contact-info div.line:last-child a {
+        margin-right: 3vw;
     }
 
     footer form {

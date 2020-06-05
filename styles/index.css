@@ -85,6 +85,11 @@ nav.mobile div.nav-menu img {
     transform: translate(-50%, -50%);
 }
 
+/* Navigation - Desktop Section */
+nav.desktop-menu {
+    display: none;
+}
+
 /* Navigation - Menu Section */
 
 nav.mobile-menu {
@@ -463,7 +468,7 @@ footer form button {
 
 }
 
-/* Menu - Animation */
+/* Mobile Menu - Animation */
 
 nav.mobile.animation {
     animation: showMenu .5s ease forwards;
@@ -1765,13 +1770,80 @@ nav.mobile.animation {
 
 @media (min-width: 935px) {
 
+    /* Menu Section */
+
+    nav.desktop-menu {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: auto;
+        overflow: hidden;
+    }
+
+    nav.desktop-menu div.desktop-menu-background {
+        display: block;
+        position: absolute;
+        height: 5vh;
+        width: 5vh;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: red;
+        opacity: 0.3;
+    }
+
+    nav.desktop-menu section.content {
+        height: 100%;
+        width: 150%;
+        /* top: 50%; */
+    }
+
+    /* Menu - Animation */
+
+    div.desktop-menu-background.desktopMenuAnimation {
+        animation: desktopMenuAnimation 1.5s ease forwards;
+    }
+
+    @keyframes desktopMenuAnimation {
+        0% {
+            height: 5vw;
+            width: 5vw;
+        }
+
+        90% {
+            height: 150vw;
+            width: 150vw;
+            border-radius: 50%;
+        }
+
+        100% {
+            height: 100vh;
+            width: 100vw;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes showMenuContent {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
     /* Wrapper Section */
 
     div.mobile-wrapper {
         background-color: #fff;
     }
 
-    /* Menu Section */
+    /* Nav Section */
 
     nav.mobile {
         width: 98vw;

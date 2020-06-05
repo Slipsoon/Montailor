@@ -3,11 +3,34 @@
     const hamburgerBtn = document.querySelector('nav.mobile div.nav-menu');
     const mobileMainPage = document.querySelector('.mobile-wrapper');
     const mobileMenu = document.querySelector('.mobile-menu');
+    const desktopMenu = document.querySelector('.desktop-menu-background');
     const returnBtn = document.querySelector('.return img');
     const menuContentBtns = document.querySelectorAll('nav.mobile-menu li');
     const footer = document.querySelector('footer');
 
-    // Animate Menu
+    // Check device height
+
+    let windowWidth = window.innerWidth;
+
+    // Check platform animation
+
+    function checkPlatformAnimation() {
+
+        if (windowWidth < 935) {
+            animateMenu();
+        } else {
+            animateDesktopMenu();
+        }
+    }
+
+    // Animate Desktop Menu
+
+    function animateDesktopMenu() {
+        desktopMenu.parentNode.style.display = 'block';
+        desktopMenu.classList.toggle('desktopMenuAnimation');
+    }
+
+    // Animate Mobile Menu
 
     function animateMenu() {
         hamburgerBtn.style.display = 'none';
@@ -35,11 +58,10 @@
     })
 
     returnBtn.addEventListener('click', hideMenu);
-    hamburgerBtn.addEventListener('click', animateMenu);
+    hamburgerBtn.addEventListener('click', checkPlatformAnimation);
 
     // Show Google Map
 
-    let windowWidth = window.innerWidth;
     createGoogleMap(windowWidth);
 
     window.addEventListener("resize", () => {

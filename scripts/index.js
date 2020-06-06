@@ -4,6 +4,7 @@
     const mobileMainPage = document.querySelector('.mobile-wrapper');
     const mobileMenu = document.querySelector('.mobile-menu');
     const desktopMenu = document.querySelector('.desktop-menu-background');
+    const desktopMenuContentLi = document.querySelectorAll('nav.desktop-menu section.content div.menu li');
     const returnBtn = document.querySelector('.return img');
     const menuContentBtns = document.querySelectorAll('nav.mobile-menu li');
     const footer = document.querySelector('footer');
@@ -28,6 +29,12 @@
     function animateDesktopMenu() {
         desktopMenu.parentNode.style.display = 'block';
         desktopMenu.classList.toggle('desktopMenuAnimation');
+
+        setTimeout(() => {
+            desktopMenuContentLi.forEach(li => {
+                li.classList.toggle('desktopShowMenuContent');
+            })
+        }, 500)
     }
 
     // Animate Mobile Menu

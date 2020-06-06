@@ -1780,6 +1780,7 @@ nav.mobile.animation {
         top: 0;
         left: auto;
         overflow: hidden;
+        z-index: 10;
     }
 
     nav.desktop-menu div.desktop-menu-background {
@@ -1791,20 +1792,82 @@ nav.mobile.animation {
         left: 50vw;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        background-color: red;
-        opacity: 0.3;
+        background-color: rgba(0, 0, 0, 0.75);
+        /* opacity: 0.3; */
     }
 
     nav.desktop-menu section.content {
-        height: 100%;
-        width: 150%;
-        /* top: 50%; */
+        height: 100vh;
+        width: 100vw;
+        opacity: 1;
+    }
+
+    nav.desktop-menu section.content div.menu {
+        position: relative;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    nav.desktop-menu section.content div.menu li {
+        margin: 25px 0;
+        font-size: 0px;
+        color: #fff;
+        list-style: none;
+    }
+
+    nav.desktop-menu section.content div.menu a {
+        position: absolute;
+        height: 40px;
+        box-sizing: content-box;
+        transform: translateX(-20px);
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    nav.desktop-menu section.content div.menu a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        border: 0;
+    }
+
+    nav.desktop-menu section.content div.menu a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 0;
+        width: 0;
+    }
+
+    nav.desktop-menu section.content div.menu li:nth-child(1) a {
+        width: 93px;
+
+    }
+
+    nav.desktop-menu section.content div.menu li:nth-child(2) a {
+        width: 103px;
+    }
+
+    nav.desktop-menu section.content div.menu li:nth-child(3) a {
+        width: 118px;
+
+    }
+
+    nav.desktop-menu section.content div.menu li:nth-child(4) a {
+        width: 130px;
+
     }
 
     /* Menu - Animation */
 
     div.desktop-menu-background.desktopMenuAnimation {
-        animation: desktopMenuAnimation 1.5s ease forwards;
+        animation: desktopMenuAnimation .5s ease forwards;
     }
 
     @keyframes desktopMenuAnimation {
@@ -1826,16 +1889,47 @@ nav.mobile.animation {
         }
     }
 
-    @keyframes showMenuContent {
+    /* Menu Content - Animation */
+
+    nav.desktop-menu section.content div.menu li.desktopShowMenuContent {
+        animation: desktopShowMenuContent .5s ease forwards;
+    }
+
+    @keyframes desktopShowMenuContent {
         0% {
-            opacity: 0;
+            font-size: 0;
         }
 
         100% {
-            opacity: 1;
+            font-size: 2.5rem;
         }
     }
 
+    /* Menu Content Left/Right Borders - Animation */
+
+    nav.desktop-menu section.content div.menu a:hover::before {
+        height: 40px;
+        transition: height .5s ease-in;
+        border: 1px solid #fff;
+    }
+
+    nav.desktop-menu section.content div.menu a:hover::after {
+        height: 40px;
+        transition: height .5s ease-in;
+        border: 1px solid #fff;
+    }
+
+    nav.desktop-menu section.content div.menu a:not(:hover)::before {
+        border: 1px solid transparent;
+        height: 0;
+        transition: height .5s ease-out, border 1s ease;
+    }
+
+    nav.desktop-menu section.content div.menu a:not(:hover)::after {
+        border: 1px solid transparent;
+        height: 0;
+        transition: height .5s ease-out, border 1s ease;
+    }
 
     /* Wrapper Section */
 

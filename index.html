@@ -46,27 +46,22 @@
         </div>
     </nav>
     <nav class="desktop-menu">
-        <div class="desktop-menu-background">
-            <section class="content">
-                <div class="return">
-                    <!-- <img src="assets/icons/arrow-outline.svg" alt="Return to main page"> -->
-                </div>
-                <div class="logo">
-                    <!-- <picture>
-                    <source srcset="assets/logo/nav-mobile-360x280.webp" type="image/webp">
-                    <img src="assets/logo/nav-mobile-360x280.png" alt="Logo">
-                </picture> -->
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#about"></a>O nas</li>
-                        <li><a href="#offer"></a>Oferta</li>
-                        <li><a href="#gallery"></a>Galeria</li>
-                        <li><a href="#contact"></a>Kontakt</li>
-                    </ul>
-                </div>
-            </section>
+        <div class="desktop-menu-background"></div>
+        <div class="return">
+            <div class="menu__button">
+                <span class="menu__line"></span>
+            </div>
         </div>
+        <section class="desktop-menu-content">
+            <div class="menu">
+                <ul>
+                    <li><a href="#about"></a>O nas</li>
+                    <li><a href="#offer"></a>Oferta</li>
+                    <li><a href="#gallery"></a>Galeria</li>
+                    <li><a href="#contact"></a>Kontakt</li>
+                </ul>
+            </div>
+        </section>
     </nav>
     <div class="mobile-wrapper">
         <nav class="mobile">
@@ -74,7 +69,10 @@
                 <div class="nav-logo"></div>
             </a>
             <div class="nav-menu">
-                <img src="assets/icons/icon-menu.svg" alt="Menu">
+                <div class="menu__button">
+                    <span class="menu__line"></span>
+                </div>
+                <!-- <img src="assets/icons/icon-menu.svg" alt="Menu"> -->
             </div>
         </nav>
         <header>

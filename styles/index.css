@@ -66,7 +66,8 @@ div.contact-logo img {
     left: 0;
 }
 
-nav.mobile div.nav-menu {
+nav.mobile div.nav-menu,
+nav.desktop-menu div.return {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -76,13 +77,43 @@ nav.mobile div.nav-menu {
     background-color: #E1D5C3;
 }
 
-nav.mobile div.nav-menu img {
-    height: 20px;
-    width: 20px;
-    position: absolute;
+div.menu__button {
+    position: relative;
+    height: 40px;
+    width: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+span.menu__line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+}
+
+span.menu__line::before,
+span.menu__line::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+}
+
+span.menu__line::before {
+    top: -8px;
+}
+
+span.menu__line::after {
+    top: 10px;
 }
 
 /* Navigation - Desktop Section */
@@ -1768,9 +1799,11 @@ nav.mobile.animation {
     }
 }
 
+/* Desktop Media */
+
 @media (min-width: 935px) {
 
-    /* Menu Section */
+    /* Desktop Menu Section */
 
     nav.desktop-menu {
         display: none;
@@ -1783,6 +1816,8 @@ nav.mobile.animation {
         z-index: 10;
     }
 
+    /* Menu Background */
+
     nav.desktop-menu div.desktop-menu-background {
         display: block;
         position: absolute;
@@ -1793,16 +1828,81 @@ nav.mobile.animation {
         transform: translate(-50%, -50%);
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.75);
-        /* opacity: 0.3; */
     }
 
-    nav.desktop-menu section.content {
+    /* Menu Button */
+
+    nav.desktop-menu div.return {
+        height: 55px;
+        width: 55px;
+        top: 15px;
+        right: 52px;
+    }
+
+    /* Menu Button Animation */
+
+    div.return.active span.menu__line::before,
+    div.return.active span.menu__line::after {
+        animation: changeMenuButton .5s linear forwards;
+    }
+
+    @keyframes changeMenuButton {
+        0% {}
+
+        80% {
+            background-color: #000;
+        }
+
+        90% {
+            background-color: transparent;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    div.return.active.cross span.menu__line::before {
+        animation: createCrossLeft .5s linear forwards;
+    }
+
+    div.return.active.cross span.menu__line::after {
+        animation: createCrossRight .5s linear forwards;
+    }
+
+    @keyframes createCrossLeft {
+        0% {
+            top: 0;
+            transform: translate(-50%, -50%) rotate(0);
+        }
+
+        100% {
+            transform: translate(-50%, 8px) rotate(-45deg);
+        }
+    }
+
+    @keyframes createCrossRight {
+        0% {
+            top: 0;
+            transform: translate(-50%, -50%) rotate(0);
+        }
+
+        100% {
+            transform: translate(-50%, -10px) rotate(45deg);
+        }
+    }
+
+    /* Menu Content */
+
+    nav.desktop-menu section.desktop-menu-content {
+        position: fixed;
+        top: 0;
+        left: auto;
         height: 100vh;
         width: 100vw;
-        opacity: 1;
     }
 
-    nav.desktop-menu section.content div.menu {
+    nav.desktop-menu section.desktop-menu-content div.menu {
         position: relative;
         top: 50vh;
         left: 50vw;
@@ -1810,14 +1910,14 @@ nav.mobile.animation {
         text-align: center;
     }
 
-    nav.desktop-menu section.content div.menu li {
+    nav.desktop-menu section.desktop-menu-content div.menu li {
         margin: 25px 0;
         font-size: 0px;
         color: #fff;
         list-style: none;
     }
 
-    nav.desktop-menu section.content div.menu a {
+    nav.desktop-menu section.desktop-menu-content div.menu a {
         position: absolute;
         height: 40px;
         box-sizing: content-box;
@@ -1826,7 +1926,7 @@ nav.mobile.animation {
         cursor: pointer;
     }
 
-    nav.desktop-menu section.content div.menu a::before {
+    nav.desktop-menu section.desktop-menu-content div.menu a::before {
         content: '';
         position: absolute;
         top: 0;
@@ -1836,7 +1936,7 @@ nav.mobile.animation {
         border: 0;
     }
 
-    nav.desktop-menu section.content div.menu a::after {
+    nav.desktop-menu section.desktop-menu-content div.menu a::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -1845,23 +1945,20 @@ nav.mobile.animation {
         width: 0;
     }
 
-    nav.desktop-menu section.content div.menu li:nth-child(1) a {
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(1) a {
         width: 93px;
-
     }
 
-    nav.desktop-menu section.content div.menu li:nth-child(2) a {
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(2) a {
         width: 103px;
     }
 
-    nav.desktop-menu section.content div.menu li:nth-child(3) a {
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(3) a {
         width: 118px;
-
     }
 
-    nav.desktop-menu section.content div.menu li:nth-child(4) a {
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(4) a {
         width: 130px;
-
     }
 
     /* Menu - Animation */
@@ -1891,7 +1988,7 @@ nav.mobile.animation {
 
     /* Menu Content - Animation */
 
-    nav.desktop-menu section.content div.menu li.desktopShowMenuContent {
+    nav.desktop-menu section.desktop-menu-content div.menu li.desktopShowMenuContent {
         animation: desktopShowMenuContent .5s ease forwards;
     }
 
@@ -1907,25 +2004,25 @@ nav.mobile.animation {
 
     /* Menu Content Left/Right Borders - Animation */
 
-    nav.desktop-menu section.content div.menu a:hover::before {
+    nav.desktop-menu section.desktop-menu-content div.menu a:hover::before {
         height: 40px;
-        transition: height .5s ease-in;
+        transition: height .2s ease-in;
         border: 1px solid #fff;
     }
 
-    nav.desktop-menu section.content div.menu a:hover::after {
+    nav.desktop-menu section.desktop-menu-content div.menu a:hover::after {
         height: 40px;
-        transition: height .5s ease-in;
+        transition: height .2s ease-in;
         border: 1px solid #fff;
     }
 
-    nav.desktop-menu section.content div.menu a:not(:hover)::before {
+    nav.desktop-menu section.desktop-menu-content div.menu a:not(:hover)::before {
         border: 1px solid transparent;
         height: 0;
         transition: height .5s ease-out, border 1s ease;
     }
 
-    nav.desktop-menu section.content div.menu a:not(:hover)::after {
+    nav.desktop-menu section.desktop-menu-content div.menu a:not(:hover)::after {
         border: 1px solid transparent;
         height: 0;
         transition: height .5s ease-out, border 1s ease;

@@ -1,10 +1,12 @@
     const navBar = document.querySelector('nav.mobile');
     const logo = document.querySelector('nav.mobile div.nav-logo');
     const hamburgerBtn = document.querySelector('nav.mobile div.nav-menu');
+    const returnButton = document.querySelector('nav.desktop-menu div.return');
+    const spanLine = document.querySelector('span.menu__line');
     const mobileMainPage = document.querySelector('.mobile-wrapper');
     const mobileMenu = document.querySelector('.mobile-menu');
     const desktopMenu = document.querySelector('.desktop-menu-background');
-    const desktopMenuContentLi = document.querySelectorAll('nav.desktop-menu section.content div.menu li');
+    const desktopMenuContentLi = document.querySelectorAll('nav.desktop-menu section.desktop-menu-content div.menu li');
     const returnBtn = document.querySelector('.return img');
     const menuContentBtns = document.querySelectorAll('nav.mobile-menu li');
     const footer = document.querySelector('footer');
@@ -27,10 +29,17 @@
     // Animate Desktop Menu
 
     function animateDesktopMenu() {
+
+        returnButton.classList.toggle('active');
+
         desktopMenu.parentNode.style.display = 'block';
         desktopMenu.classList.toggle('desktopMenuAnimation');
 
         setTimeout(() => {
+
+            spanLine.style.backgroundColor = 'transparent';
+            returnButton.classList.toggle('cross');
+
             desktopMenuContentLi.forEach(li => {
                 li.classList.toggle('desktopShowMenuContent');
             })

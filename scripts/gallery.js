@@ -1,5 +1,5 @@
 const images = document.querySelectorAll('section.gallery-content img');
-const navBar = document.querySelector('nav.mobile');
+const navigationBar = document.querySelector('nav.mobile');
 const imageResize = document.querySelector('div.image-resize');
 const mobileWrapper = document.querySelector('div.mobile-wrapper');
 const exitBtn = document.querySelector('div.area');
@@ -16,7 +16,7 @@ images.forEach(image => {
 // Create dark layer and resize image
 
 function resizeImage(setImgSrc) {
-    navBar.style.display = 'none';
+    navigationBar.style.display = 'none';
     imageResize.style.display = 'block';
     const createImgElement = document.createElement('img');
     createImgElement.setAttribute('src', setImgSrc);
@@ -26,7 +26,7 @@ function resizeImage(setImgSrc) {
 // Event for returning to web page
 
 exitBtn.addEventListener('click', () => {
-    navBar.style.display = 'block';
+    navigationBar.style.display = 'block';
     imageResize.style.display = 'none';
     const getImage = imageResize.querySelector('img');
     imageResize.removeChild(getImage);

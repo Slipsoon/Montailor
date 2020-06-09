@@ -1836,7 +1836,7 @@ nav.mobile.animation {
         height: 55px;
         width: 55px;
         top: 15px;
-        right: 52px;
+        right: 35px;
     }
 
     /* Menu Button Animation */
@@ -1893,6 +1893,16 @@ nav.mobile.animation {
     }
 
     /* Menu Content */
+
+    div.content-return {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        height: 55px;
+        width: 55px;
+        cursor: pointer;
+        background-color: transparent;
+    }
 
     nav.desktop-menu section.desktop-menu-content {
         position: fixed;
@@ -2204,6 +2214,18 @@ nav.mobile.animation {
 
 @media (min-width: 1280px) and (min-height: 500px) {
 
+    /* Desktop Menu */
+
+    /* Menu Button */
+
+    nav.desktop-menu div.return {
+        right: 40px;
+    }
+
+    div.content-return {
+        right: 40px;
+    }
+
     /* Header Section */
 
     header div.img1 {
@@ -2371,6 +2393,18 @@ nav.mobile.animation {
 
 @media (min-width: 1360px) {
 
+    /* Desktop Menu */
+
+    /* Menu Button */
+
+    nav.desktop-menu div.return {
+        right: 42px;
+    }
+
+    div.content-return {
+        right: 42px;
+    }
+
     /* Header Section */
 
     .webp header div.img1 {
@@ -2446,6 +2480,18 @@ nav.mobile.animation {
 
 @media (min-width: 1440px) {
 
+    /* Desktop Menu */
+
+    /* Menu Button */
+
+    nav.desktop-menu div.return {
+        right: 45px;
+    }
+
+    div.content-return {
+        right: 45px;
+    }
+
     /* Gallery Section */
 
     footer#contact {
@@ -2482,6 +2528,18 @@ nav.mobile.animation {
 
 @media (min-width: 1600px) {
 
+    /* Desktop Menu */
+
+    /* Menu Button */
+
+    nav.desktop-menu div.return {
+        right: 48px;
+    }
+
+    div.content-return {
+        right: 48px;
+    }
+
     /* Gallery Section */
 
     section.gallery p {
@@ -2509,7 +2567,19 @@ nav.mobile.animation {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (min-height: 900px) {
+
+    /* Desktop Menu */
+
+    /* Menu Button */
+
+    nav.desktop-menu div.return {
+        right: 48px;
+    }
+
+    div.content-return {
+        right: 48px;
+    }
 
     /* Offer Section */
 
@@ -2557,6 +2627,24 @@ nav.mobile.animation {
 }
 
 @media (min-width: 1900px) and (min-height: 900px) {
+
+    /* Desktop Menu */
+
+    /* Menu Button */
+
+    nav.desktop-menu div.return {
+        height: 55px;
+        width: 55px;
+        top: 15px;
+        right: 52px;
+    }
+
+    div.content-return {
+        top: 15px;
+        right: 52px;
+        height: 55px;
+        width: 55px;
+    }
 
     /* Contact Section */
 

@@ -115,3 +115,148 @@ div.category-list ul li {
         font-size: 6.5rem;
     }
 }
+
+/* Desktop Media */
+
+@media (min-width: 935px) {
+
+    /* Menu */
+
+    nav.desktop-menu section.desktop-menu-content div.menu a {
+        height: 30px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li {
+        margin: 30px 0;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(1) a {
+        width: 69.16px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(2) a {
+        width: 78px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(3) a {
+        width: 89px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(4) a {
+        width: 98px;
+    }
+
+    @keyframes desktopShowMenuContent {
+        0% {
+            font-size: 0;
+        }
+
+        100% {
+            font-size: 3rem;
+        }
+    }
+
+    /* Content */
+
+    div.category-list ul {
+        height: 100vh;
+        width: 80vw;
+        position: absolute;
+        top: auto;
+        left: 50vw;
+        transform: translateX(-50%);
+    }
+
+    div.category-list ul li {
+        position: relative;
+        width: 20vw;
+        height: 20vh;
+        float: left;
+        list-style: none;
+        line-height: 20vh;
+    }
+
+    div.category-list ul li:nth-child(1) {
+        background-image: url("../assets/images/sections/categories/desktop/trousers.jpg");
+    }
+
+    div.category-list ul li:nth-child(2) {
+        background-image: url("../assets/images/sections/categories/desktop/skirts.jpg");
+    }
+
+    div.category-list ul li:nth-child(3) {
+        background-image: url("../assets/images/sections/categories/desktop/dresses.jpg");
+    }
+
+    div.category-list ul li:nth-child(4) {
+        background-image: url("../assets/images/sections/categories/desktop/suits.jpg");
+    }
+
+    div.category-list ul li:nth-child(5) {
+        background-image: url("../assets/images/sections/categories/desktop/navy.jpg");
+    }
+
+    div.category-list ul li:nth-child(6) {
+        background-image: url("../assets/images/sections/categories/desktop/shirts.jpg");
+    }
+
+    div.category-list ul li:nth-child(7) {
+        background-image: url("../assets/images/sections/categories/desktop/blouses.jpg");
+    }
+
+    div.category-list ul li:nth-child(8) {
+        background-image: url("../assets/images/sections/categories/desktop/sweaters.jpg");
+    }
+
+    div.category-list ul li:nth-child(9) {
+        background-image: url("../assets/images/sections/categories/desktop/jackets.jpg");
+    }
+
+    div.category-list ul li:nth-child(10) {
+        background-image: url("../assets/images/sections/categories/desktop/coates.jpg");
+    }
+
+    div.category-list ul li a {
+        width: 30vh;
+        height: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1550px) {
+
+    nav.desktop-menu section.desktop-menu-content div.menu a::before {
+        top: 5px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu a::after {
+        bottom: -5px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(1) a {
+        width: 92.22px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(2) a {
+        width: 103px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(3) a {
+        width: 118px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(4) a {
+        width: 130px;
+    }
+
+    @keyframes desktopShowMenuContent {
+        0% {
+            font-size: 0;
+        }
+
+        100% {
+            font-size: 4rem;
+        }
+    }
+}

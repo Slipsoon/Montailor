@@ -291,6 +291,7 @@ section.gallery button {
     padding: 10px;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
 }
 
 /* Section - Gallery & gallery-bg */
@@ -1813,7 +1814,7 @@ nav.mobile.animation {
         top: 0;
         left: auto;
         overflow: hidden;
-        z-index: 10;
+        z-index: 11;
     }
 
     /* Menu Background */
@@ -2036,12 +2037,6 @@ nav.mobile.animation {
         border: 1px solid transparent;
         height: 0;
         transition: height .5s ease-out, border 1s ease;
-    }
-
-    /* Wrapper Section */
-
-    div.mobile-wrapper {
-        background-color: #fff;
     }
 
     /* Nav Section */

@@ -379,3 +379,205 @@ nav.mobile-menu div.category-list ul li {
         font-size: 1.9rem;
     }
 }
+
+/* Desktop Media */
+
+@media (min-width: 935px) {
+
+    /* Menu */
+
+    nav.desktop-menu section.desktop-menu-content div.menu li {
+        margin: 10px 0;
+    }
+
+    section.desktop-menu-content {
+        padding: 0;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li a {
+        height: 27px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(1) a {
+        width: 82px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(2) a {
+        width: 93.05px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(3) a {
+        width: 89px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(4) a {
+        width: 77px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(5) a {
+        width: 106px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(6) a {
+        width: 81.92px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(7) a {
+        width: 67px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(8) a {
+        width: 72px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(9) a {
+        width: 66px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(10) a {
+        width: 86.6px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(11) a {
+        width: 115.25px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(12) a {
+        width: 95.83px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(13) a {
+        width: 109.66px;
+    }
+
+    /* Menu Content Left/Right Borders - Animation */
+
+    nav.desktop-menu section.desktop-menu-content div.menu a:hover::before {
+        height: 25px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu a:hover::after {
+        height: 25px;
+    }
+
+    /* Sections */
+
+    div.item {
+        width: 60vw;
+        margin: 0 auto;
+        padding: 5px 4vw;
+    }
+
+    section#informacje h2 {
+        width: 60vw;
+        margin: 35px auto;
+    }
+}
+
+@media (min-width: 1400px) and (min-height: 700px) {
+
+    /* Menu */
+
+    nav.desktop-menu section.desktop-menu-content div.menu li a {
+        height: 33px;
+    }
+
+    /* Menu Content Left/Right Borders - Animation */
+
+    nav.desktop-menu section.desktop-menu-content div.menu a:hover::before {
+        height: 30px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu a:hover::after {
+        height: 30px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(1) a {
+        width: 98.34px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(2) a {
+        width: 111.66px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(3) a {
+        width: 106.67px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(4) a {
+        width: 93px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(5) a {
+        width: 126.63px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(6) a {
+        width: 98.31px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(7) a {
+        width: 80px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(8) a {
+        width: 86px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(9) a {
+        width: 78.33px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(10) a {
+        width: 103.28px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(11) a {
+        width: 138.3px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(12) a {
+        width: 114.98px;
+    }
+
+    nav.desktop-menu section.desktop-menu-content div.menu li:nth-child(13) a {
+        width: 131.59px;
+    }
+
+    @keyframes desktopShowMenuContent {
+        0% {
+            font-size: 0;
+        }
+
+        100% {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: 1600px) and (min-height: 880px) {
+
+    /* Menu */
+
+    nav.desktop-menu section.desktop-menu-content div.menu li {
+        margin: 25px 0;
+    }
+
+    /* Titles */
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    /* Items */
+
+    div.item {
+        font-size: 2.3rem;
+    }
+
+    /* Info */
+
+    section#informacje h2 {
+        font-size: 2.3rem;
+    }
+}

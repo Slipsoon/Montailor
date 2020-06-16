@@ -72,6 +72,7 @@ div.next button {
     background-color: transparent;
     z-index: 20;
     border: none;
+    cursor: pointer;
 }
 
 div.previous span,
@@ -158,6 +159,53 @@ div.image-resize button.exit {
     background-image: url("../assets/icons/cross-outline.svg");
 }
 
+/* Image counter */
+
+div.images-counter {
+    display: block;
+    width: 30vw;
+    height: 10vw;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 75vh;
+    left: 50vw;
+    z-index: 20;
+    border-radius: 10px;
+    line-height: 10vw;
+    background-color: #404040;
+    font-size: 2rem;
+}
+
+div.images-counter p {
+    font-size: 2rem;
+    text-align: center;
+    color: #c4bfbb;
+}
+
+div.current-image {
+    width: 12vw;
+    height: 8vw;
+    position: absolute;
+    top: 1vw;
+    left: 2vw;
+    border-radius: 10px;
+    color: #c4bfbb;
+    line-height: 8vw;
+    text-align: center;
+}
+
+div.all-images {
+    width: 12vw;
+    height: 8vw;
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    border-radius: 10px;
+    color: #c4bfbb;
+    line-height: 8vw;
+    text-align: center;
+}
+
 /* Galaxy S5 - iPhone 6/7/8 Support / (360px x 640px) - (375px x 667px) */
 
 @media(min-width: 360px) and (max-width: 375px) {
@@ -169,6 +217,22 @@ div.image-resize button.exit {
     section.gallery-content img {
         height: 170px;
         width: 170px;
+    }
+
+    /* Image counter */
+
+    div.images-counter {
+        width: 30vw;
+        font-size: 2.4rem;
+    }
+
+    div.images-counter p {
+        font-size: 2.4rem;
+    }
+
+    div.current-image,
+    div.all-images {
+        width: 12vw;
     }
 }
 
@@ -183,6 +247,22 @@ div.image-resize button.exit {
         height: 195px;
         width: 195px;
     }
+
+    /* Image counter */
+
+    div.images-counter {
+        width: 30vw;
+        font-size: 2.6rem;
+    }
+
+    div.images-counter p {
+        font-size: 2.6rem;
+    }
+
+    div.current-image,
+    div.all-images {
+        width: 12vw;
+    }
 }
 
 /* iPad Support / (768px x 1024px) */
@@ -195,6 +275,26 @@ div.image-resize button.exit {
     section.gallery-content img {
         height: 240px;
         width: 240px;
+    }
+
+    /* Image counter */
+
+    div.images-counter {
+        height: 8vw;
+        width: 22vw;
+        font-size: 3.5rem;
+        line-height: 8vw;
+    }
+
+    div.images-counter p {
+        font-size: 3.5rem;
+        line-height: 8vw;
+    }
+
+    div.current-image,
+    div.all-images {
+        width: 7vw;
+        line-height: 6vw;
     }
 }
 
@@ -221,13 +321,34 @@ div.image-resize button.exit {
     }
 
     div.image-resize div.area {
-        height: 8vh;
-        width: 8vh;
+        height: 14vh;
+        width: 14vh;
     }
 
     div.image-resize button.exit {
         height: 8vh;
         width: 8vh;
+    }
+
+    /* Image counter */
+
+    div.images-counter {
+        height: 12vh;
+        width: 20vw;
+        opacity: 0.8;
+        top: 80vh;
+    }
+
+    div.images-counter p {
+        line-height: 12vh;
+        font-size: 2.3rem;
+    }
+
+    div.current-image,
+    div.all-images {
+        height: 9vh;
+        width: 6vw;
+        line-height: 9vh;
     }
 }
 
@@ -238,6 +359,24 @@ div.image-resize button.exit {
         width: 30px;
         height: 30px;
     }
+
+    /* Image counter */
+
+    div.images-counter {
+        height: 10vh;
+        font-size: 2.3rem;
+    }
+
+    div.images-counter p {
+        line-height: 10vh;
+    }
+
+    div.current-image,
+    div.all-images {
+        height: 7vh;
+        line-height: 7vh;
+    }
+
 }
 
 /* Pixel 2 - iPhone 6/7/8 Plus Support */
@@ -247,6 +386,20 @@ div.image-resize button.exit {
     nav.mobile div.nav-menu img {
         width: 35px;
         height: 35px;
+    }
+
+    /* Image counter */
+
+    div.images-counter,
+    div.images-counter p {
+        height: 9vh;
+        font-size: 2.6rem;
+    }
+
+    div.current-image,
+    div.all-images {
+        height: 6vh;
+        line-height: 6vh;
     }
 }
 
@@ -309,96 +462,116 @@ div.image-resize button.exit {
     div.image-resize div.area {
         width: 2vw;
         height: 2vw;
-        margin: 25px;
+        margin: 15px;
     }
 
     div.image-resize button.exit {
-        width: 2vw;
-        height: 2vw;
+        width: 2.5vw;
+        height: 2.5vw;
         cursor: pointer;
     }
 
-    /* Image Interface */
+    /* Image counter */
 
-    div.image-interface {
-        height: 5vh;
-        width: 100vw;
-        position: absolute;
-        bottom: 1vh;
-        left: 0;
-        z-index: 20;
-        background-color: #404040;
+    div.images-counter {
+        width: 12vw;
+        height: 6vh;
+        top: 85vh;
+        font-size: 2rem;
     }
 
-    div.user-interface {
-        position: relative;
-        width: 30vw;
-        height: 5vh;
-        top: auto;
-        left: 50vw;
-        transform: translateX(-50%);
+    div.images-counter p {
+        font-size: 2rem;
+        line-height: 6vh;
     }
 
-    div.user-interface div.image-position {
-        position: relative;
-        top: auto;
-        left: 50%;
-        height: 5vh;
-        width: 8vw;
-        transform: translateX(-50%);
-        line-height: 5vh;
-        background-color: rgba(0, 0, 0, 0.35);
-        border-radius: 10px;
+    div.current-image {
+        width: 4vw;
+        height: 3vh;
+        top: 1.5vh;
+        left: 1vw;
+        line-height: 3vh;
     }
 
-    div.user-interface div.image-position>div {
-        position: absolute;
+    div.all-images {
+        width: 4vw;
+        height: 3vh;
+        top: 1.5vh;
+        right: 1vw;
+        line-height: 3vh;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    div.previous span.previous::before,
+    div.previous span.previous::after,
+    div.next span.next::before,
+    div.next span.next::after {
+        width: 35px;
+        height: 3px;
+    }
+
+    /* Previous Image Button */
+
+    div.previous span.previous::before,
+    div.previous span.previous::after {
+        left: 5px;
+    }
+
+    div.previous span.previous::before {
+        top: -14px;
+        transform: rotate(-60deg);
+    }
+
+    div.previous span.previous::after {
+        top: 15px;
+        transform: rotate(60deg);
+    }
+
+    /* Next Image Button */
+
+    div.next span.next::before,
+    div.next span.next::after {
+        right: 5px;
+    }
+
+    div.next span.next::before {
+        top: -14px;
+        transform: rotate(60deg);
+    }
+
+    div.next span.next::after {
+        top: 15px;
+        transform: rotate(-60deg);
+    }
+
+    /* Image counter */
+
+    div.images-counter {
+        width: 10vw;
+        height: 6vh;
+        top: 85vh;
+        font-size: 2.5rem;
+    }
+
+    div.images-counter p {
+        font-size: 2.5rem;
+        line-height: 6vh;
+    }
+
+    div.current-image {
         width: 3vw;
         height: 3vh;
-        background-color: gainsboro;
-        top: 50%;
-        transform: translateY(-50%);
-        border-radius: 10px;
+        left: 1vw;
+        line-height: 3vh;
     }
 
-    div.image-position div.current-image {
-        left: 0.5vw;
-    }
-
-    div.image-position div.total-images {
-        right: 0.5vw;
-    }
-
-    div.image-position p {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    div.user-interface button {
-        position: absolute;
-        width: 3.5vw;
-        height: 4vh;
-        top: 0.5vh;
-    }
-
-    div.user-interface button.previous {
-        left: 6vw;
-    }
-
-    div.user-interface button.next {
-        right: 6vw;
-    }
-
-    div.user-interface button.close {
+    div.all-images {
+        width: 3vw;
+        height: 3vh;
         right: 1vw;
-    }
-
-
-    div.image-interface div.user-interface button.exit {
-        position: absolute;
-        left: 20vw;
-        transform: translateX(50%);
-        border: 1px solid blue;
+        line-height: 3vh;
     }
 }
 
@@ -436,5 +609,21 @@ div.image-resize button.exit {
         100% {
             font-size: 4rem;
         }
+    }
+
+    /* Image Resize */
+
+    div.image-resize button.exit {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+@media (min-width: 1900px) and (min-height: 900px) {
+    /* Image counter */
+
+    div.images-counter,
+    div.images-counter p {
+        font-size: 3rem;
     }
 }

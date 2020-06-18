@@ -1,29 +1,29 @@
-const sliderImages = document.querySelectorAll('header div');
-
-let sliderImgList = [];
-let imageLeftPosition = [0, 0, 0, 0];
-
-sliderImages.forEach(sliderImage => {
-    sliderImgList.push(sliderImage);
-});
+const header = document.querySelector('header');
 
 function slide() {
 
-    for (let i = 0; i < sliderImgList.length; i++) {
-        imageLeftPosition[i] -= 100;
-        sliderImgList[i].style.left = `${imageLeftPosition[i]}vw`;
-    }
+    setTimeout(() => {
+        header.classList.toggle('second-img');
+    }, 6000)
 
-    moveLeftSlideToRightEdge();
+    setTimeout(() => {
+        header.classList.toggle('third-img');
+    }, 12000)
+
+    setTimeout(() => {
+        header.classList.toggle('fourth-img');
+    }, 18000)
+
+    setTimeout(() => {
+        header.classList.toggle('second-img');
+        header.classList.toggle('third-img');
+        header.classList.toggle('fourth-img');
+    }, 19000)
+};
+
+windowWidth = window.innerWidth;
+
+if (windowWidth < 935) {
+    setInterval(slide, 18000);
+    slide();
 }
-
-function moveLeftSlideToRightEdge() {
-
-    for (imagePosition in imageLeftPosition) {
-        if (imageLeftPosition[imagePosition] == -300)
-            imageLeftPosition[imagePosition] = 100;
-    }
-}
-
-
-document.addEventListener('click', slide);

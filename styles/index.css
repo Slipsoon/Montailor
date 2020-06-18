@@ -200,7 +200,25 @@ div.mobile-wrapper {
 }
 
 header {
+    position: relative;
     width: 400vw;
+    left: 0;
+    top: 0;
+}
+
+header.second-img {
+    left: -100vw;
+    transition: left 1s;
+}
+
+header.third-img {
+    left: -200vw;
+    transition: left 1s;
+}
+
+header.fourth-img {
+    left: -300vw;
+    transition: left 1s;
 }
 
 header>div {
@@ -209,12 +227,6 @@ header>div {
     width: 100vw;
     float: left;
 }
-
-header div.img1 {}
-
-header div.img2 {}
-
-header div.img3 {}
 
 header div.img1 h1,
 header div.img2 h1,
@@ -226,12 +238,30 @@ header div.img3 h1 {
     width: 200px;
     color: #E1D5C3;
     font-weight: normal;
+    opacity: 0;
+}
+
+header div.img1 h1 {
+    opacity: 1;
+}
+
+header.second-img div.img2 h1 {
+    opacity: 1;
+    transition: opacity 1s ease-out 1s;
+}
+
+header.third-img div.img3 h1 {
+    opacity: 1;
+    transition: opacity 1s ease-out 1s;
+}
+
+header.fourth-img div.img1 h1 {
+    opacity: 0;
 }
 
 header div.img3 h1 {
     color: rgb(138, 139, 140);
 }
-
 
 /* All sections */
 
@@ -1145,17 +1175,14 @@ nav.mobile.animation {
     /* Header */
 
     header div.img1 {
-        /* animation: 6s changeBackground linear infinite; */
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
     header div.img2 {
-        /* animation: 6s changeBackground 2s linear infinite; */
         background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
     header div.img3 {
-        /* animation: 6s changeBackground 4s linear infinite; */
         background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
@@ -1344,33 +1371,6 @@ nav.mobile.animation {
     }
 }
 
-@keyframes changeBackground {
-
-    0% {
-        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
-    }
-
-    33.2% {
-        background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
-    }
-
-    33.3% {
-        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
-    }
-
-    66.5% {
-        background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
-    }
-
-    66.6% {
-        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
-    }
-
-    99.9% {
-        background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
-    }
-}
-
 /* iPhone 5/SE Support - Landscape orientation */
 
 @media (orientation: landscape) and (min-width: 500px) {
@@ -1418,17 +1418,39 @@ nav.mobile.animation {
         background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
     }
 
-    header div.img2 {
-        background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+    .webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/land-image2-1280x854-90.webp") top / cover no-repeat;
     }
 
-    header div.img3 {
-        background: url("../assets/images/sections/main/img1/land-image1-1280x854-90.jpg") top / cover no-repeat #000;
+    .no-webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/land-image2-1280x854-90.jpg") top / cover no-repeat;
+    }
+
+    .webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/land-image3-1280x854-90.webp") top / cover no-repeat;
+    }
+
+    .no-webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/land-image3-1280x854-90.jpg") top / cover no-repeat;
     }
 
     header div.img1 h1 {
         width: 250px;
         top: 100px;
+        left: 270px;
+        font-size: 2.2rem;
+    }
+
+    header div.img2 h1 {
+        width: 250px;
+        top: 70px;
+        left: 250px;
+        font-size: 2.2rem;
+    }
+
+    header div.img3 h1 {
+        width: 250px;
+        top: 50px;
         left: 270px;
         font-size: 2.2rem;
     }
@@ -1594,7 +1616,9 @@ nav.mobile.animation {
 
     /* Header Section */
 
-    header div.img1 h1 {
+    header div.img1 h1,
+    header div.img2 h1,
+    header div.img3 h1 {
         width: 280px;
         left: 300px;
         font-size: 2.5rem;
@@ -1711,11 +1735,17 @@ nav.mobile.animation {
 
     /* Header section */
 
-    header div.img1 h1 {
+    header div.img1 h1,
+    header div.img2 h1,
+    header div.img3 h1 {
         width: 320px;
         top: 120px;
         left: 350px;
         font-size: 2.8rem;
+    }
+
+    header div.img3 h1 {
+        top: 80px;
     }
 
     /* About section */

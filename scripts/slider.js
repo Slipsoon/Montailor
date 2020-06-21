@@ -1,4 +1,5 @@
 const header = document.querySelector('header');
+const LastImgTitle = document.querySelector('header').lastElementChild;
 
 function slide() {
 
@@ -8,22 +9,20 @@ function slide() {
 
     setTimeout(() => {
         header.classList.toggle('third-img');
+        LastImgTitle.lastElementChild.classList.toggle('animate');
     }, 12000)
 
     setTimeout(() => {
         header.classList.toggle('fourth-img');
+        LastImgTitle.lastElementChild.classList.toggle('animate');
     }, 18000)
 
     setTimeout(() => {
         header.classList.toggle('second-img');
         header.classList.toggle('third-img');
         header.classList.toggle('fourth-img');
-    }, 19000)
+    }, 20000)
 };
 
-windowWidth = window.innerWidth;
-
-if (windowWidth < 935) {
-    setInterval(slide, 18000);
-    slide();
-}
+slide();
+setInterval(slide, 18000);

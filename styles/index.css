@@ -238,11 +238,15 @@ header div.img3 h1 {
     width: 200px;
     color: #E1D5C3;
     font-weight: normal;
+}
+
+header div.img2 h1,
+header div.img3 h1 {
     opacity: 0;
 }
 
-header div.img1 h1 {
-    opacity: 1;
+header div.img1 h1.animate {
+    opacity: 0;
 }
 
 header.second-img div.img2 h1 {
@@ -256,7 +260,8 @@ header.third-img div.img3 h1 {
 }
 
 header.fourth-img div.img1 h1 {
-    opacity: 0;
+    opacity: 1;
+    transition: opacity 1s ease-out 1s;
 }
 
 header div.img3 h1 {
@@ -772,7 +777,7 @@ nav.mobile.animation {
     header div.img3 h1 {
         top: 170px;
         left: 70px;
-        width: 280px;
+        width: 320px;
         font-size: 2.6rem;
     }
 
@@ -2088,11 +2093,27 @@ nav.mobile.animation {
 
     /* Header Section */
 
-    header div.img1 h1 {
+    header div.img1 h1,
+    header div.img2 h1,
+    header div.img3 h1 {
         width: 450px;
         top: 25vh;
         left: 50vw;
         font-size: 4rem;
+    }
+
+    header div.img2 h1 {
+        left: 40vw;
+    }
+
+    header div.img3 h1 {
+        top: 15vh;
+    }
+
+    header.second-img,
+    header.third-img,
+    header.fourth-img {
+        transition-duration: 2s;
     }
 
     /* About Section */
@@ -2362,7 +2383,9 @@ nav.mobile.animation {
 
     /* Header Section */
 
-    header div.img1 h1 {
+    header div.img1 h1,
+    header div.img2 h1,
+    header div.img3 h1 {
         width: 500px;
         font-size: 4.5rem;
     }
@@ -2447,6 +2470,26 @@ nav.mobile.animation {
         background: url("../assets/images/sections/main/img1/land-image1-1920x1081-90.jpg") center / cover no-repeat;
     }
 
+    .webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/land-image2-1920x1281-70.webp") bottom / cover no-repeat;
+    }
+
+    .no-webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/land-image2-1920x1281-70.jpg") bottom / cover no-repeat;
+    }
+
+    header div.img2 h1 {
+        left: 55vw;
+    }
+
+    .webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/land-image3-1920x1281-70.webp") center / cover no-repeat;
+    }
+
+    .no-webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/land-image3-1920x1281-70.jpg") center / cover no-repeat;
+    }
+
     /* Section About */
 
     .webp section.about {
@@ -2524,6 +2567,13 @@ nav.mobile.animation {
         right: 45px;
     }
 
+    /* Header */
+
+    header div.img2 h1 {
+        top: 20vh;
+        left: 50vw;
+    }
+
     /* Gallery Section */
 
     footer#contact {
@@ -2572,6 +2622,11 @@ nav.mobile.animation {
         right: 48px;
     }
 
+    /* Header */
+    header div.img2 h1 {
+        top: 15vh;
+    }
+
     /* Gallery Section */
 
     section.gallery p {
@@ -2611,6 +2666,12 @@ nav.mobile.animation {
 
     div.content-return {
         right: 48px;
+    }
+
+    /* Header */
+
+    header div.img2 h1 {
+        top: 25vh;
     }
 
     /* Offer Section */
@@ -2676,6 +2737,12 @@ nav.mobile.animation {
         right: 52px;
         height: 55px;
         width: 55px;
+    }
+
+    /* Header */
+
+    header div.img2 h1 {
+        top: 20vh;
     }
 
     /* Contact Section */

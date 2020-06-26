@@ -16,7 +16,7 @@
 
         } else if ((windowWidth >= 935) && (checkMapExists == null)) {
 
-            const title = document.createElement('h1');
+            const title = document.createElement('h2');
             title.textContent = 'Nasza lokalizacja!';
 
             googleMap = document.createElement('div');

@@ -15,7 +15,9 @@ p {
     font-family: 'Lato', sans-serif, Arial, Helvetica;
 }
 
-h1 {
+h1,
+h2,
+header p {
     font-family: 'Great Vibes', cursive, Arial, Helvetica, sans-serif;
     font-size: 4rem;
 }
@@ -36,24 +38,24 @@ nav.mobile {
     background-color: rgba(1, 0, 0, 0.75);
 }
 
-.webp div.nav-logo {
+.webp div.nav-logo img {
     width: 108px;
     height: 84px;
     position: absolute;
     left: 16px;
     top: -12px;
-    background: url("../assets/logo/nav-mobile-360x280.webp");
+    /* background: url("../assets/logo/nav-mobile-360x280.webp"); */
     background-size: cover;
     border-radius: 50%;
 }
 
-.no-webp div.nav-logo {
+.no-webp div.nav-logo img {
     width: 108px;
     height: 84px;
     position: absolute;
     left: 16px;
     top: -12px;
-    background: url("../assets/logo/nav-mobile-360x280.png");
+    /* background: url("../assets/logo/nav-mobile-360x280.png"); */
     background-size: cover;
     border-radius: 50%;
 }
@@ -229,8 +231,7 @@ header>div {
 }
 
 header div.img1 h1,
-header div.img2 h1,
-header div.img3 h1 {
+header p {
     position: absolute;
     top: 0;
     left: 0;
@@ -240,31 +241,31 @@ header div.img3 h1 {
     font-weight: normal;
 }
 
-header div.img2 h1,
-header div.img3 h1 {
+header div.img2 p,
+header div.img3 p {
     opacity: 0;
 }
 
-header div.img1 h1.animate {
+header div.img1 p.animate {
     opacity: 0;
 }
 
-header.second-img div.img2 h1 {
+header.second-img div.img2 p {
     opacity: 1;
     transition: opacity 1s ease-out 1s;
 }
 
-header.third-img div.img3 h1 {
+header.third-img div.img3 p {
     opacity: 1;
     transition: opacity 1s ease-out 1s;
 }
 
-header.fourth-img div.img1 h1 {
+header.fourth-img div.img1 p {
     opacity: 1;
     transition: opacity 1s ease-out 1s;
 }
 
-header div.img3 h1 {
+header div.img3 p {
     color: rgb(138, 139, 140);
 }
 
@@ -281,12 +282,12 @@ section.about {
 
 /* Section - About */
 
-section.about h1,
+section.about h2,
 p {
     color: rgb(196, 191, 187);
 }
 
-section.about h1 {
+section.about h2 {
     position: relative;
 }
 
@@ -299,7 +300,7 @@ section.about p {
 
 /* Section - Offer */
 
-section.offer h1 {
+section.offer h2 {
     position: relative;
     width: 150px;
     top: 100px;
@@ -348,7 +349,7 @@ section.gallery {
     top: -100vh;
 }
 
-section.gallery h1 {
+section.gallery h2 {
     position: relative;
     width: 150px;
     top: 100px;
@@ -387,13 +388,13 @@ footer {
     background-color: rgb(64, 64, 64);
 }
 
-footer h1,
+footer h2,
 h2 {
     color: rgb(201, 157, 124);
     font-weight: 400;
 }
 
-footer h1 {
+footer h2 {
     padding-top: 100px;
     text-align: center;
     font-size: 3rem;
@@ -509,6 +510,7 @@ footer form button {
 }
 
 footer form label {
+    height: auto;
     font-family: 'Great Vibes', cursive, Arial, Helvetica, sans-serif;
     font-size: 1.7rem;
     color: rgb(201, 157, 124);
@@ -609,29 +611,38 @@ nav.mobile.animation {
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
-    header div.img2 {
+    .no-webp header div.img2 {
         background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img3 {
+    .webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.webp") center / cover no-repeat;
+    }
+
+    .no-webp header div.img3 {
         background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img1 h1 {
+    .webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.webp") center / cover no-repeat;
+    }
+
+    header div.img1 h1,
+    header div.img1 p {
         top: 150px;
         left: 90px;
         width: 215px;
     }
 
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img2 p,
+    header div.img3 p {
         top: 150px;
         left: 65px;
         width: 250px;
         font-size: 2.3rem;
     }
 
-    header div.img3 h1 {
+    header div.img3 p {
         top: 130px;
     }
 
@@ -645,7 +656,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/about/about-320x568-90.jpg") center / cover no-repeat #000;
     }
 
-    section.about h1 {
+    section.about h2 {
         width: 120px;
         top: 120px;
         left: 150px;
@@ -704,8 +715,8 @@ nav.mobile.animation {
         height: 80px;
     }
 
-    .webp div.nav-logo,
-    .no-webp div.nav-logo {
+    .webp div.nav-logo img,
+    .no-webp div.nav-logo img {
         width: 126px;
         height: 98px;
         top: -9px;
@@ -758,30 +769,39 @@ nav.mobile.animation {
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
-    header div.img2 {
+    .no-webp header div.img2 {
         background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img3 {
+    .webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.webp") center / cover no-repeat;
+    }
+
+    .no-webp header div.img3 {
         background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img1 h1 {
+    .webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.webp") center / cover no-repeat;
+    }
+
+    header div.img1 h1,
+    header div.img1 p {
         top: 170px;
         left: 100px;
         font-size: 2.3rem;
         width: 250px;
     }
 
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img2 p,
+    header div.img3 p {
         top: 170px;
         left: 70px;
         width: 320px;
         font-size: 2.6rem;
     }
 
-    header div.img3 h1 {
+    header div.img3 p {
         top: 150px;
     }
 
@@ -795,7 +815,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/about/about-375x667-90.jpg") center / cover no-repeat #000;
     }
 
-    section.about h1 {
+    section.about h2 {
         width: 140px;
         top: 140px;
         left: 190px;
@@ -818,7 +838,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/offer/offer-320x568-90.jpg") center / cover no-repeat #000;
     }
 
-    section.offer h1 {
+    section.offer h2 {
         top: 120px;
         font-size: 3.5rem;
     }
@@ -844,7 +864,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/gallery/gallery-375x667-90.jpg") center / cover no-repeat;
     }
 
-    section.gallery h1 {
+    section.gallery h2 {
         top: 120px;
         font-size: 4rem;
     }
@@ -863,7 +883,7 @@ nav.mobile.animation {
 
     /* Footer - Contact */
 
-    footer h1 {
+    footer h2 {
         padding-top: 120px;
     }
 
@@ -915,8 +935,8 @@ nav.mobile.animation {
         height: 90px;
     }
 
-    .webp div.nav-logo,
-    .no-webp div.nav-logo {
+    .webp div.nav-logo img,
+    .no-webp div.nav-logo img {
         width: 144px;
         height: 112px;
         top: -11px;
@@ -967,30 +987,39 @@ nav.mobile.animation {
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
-    header div.img2 {
+    .no-webp header div.img2 {
         background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img3 {
+    .webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.webp") center / cover no-repeat;
+    }
+
+    .no-webp header div.img3 {
         background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img1 h1 {
+    .webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.webp") center / cover no-repeat;
+    }
+
+    header div.img1 h1,
+    header div.img1 p {
         top: 180px;
         left: 110px;
         font-size: 2.75rem;
         width: 295px;
     }
 
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img2 p,
+    header div.img3 p {
         top: 200px;
         left: 80px;
         width: 330px;
         font-size: 3rem;
     }
 
-    header div.img3 h1 {
+    header div.img3 p {
         top: 160px;
     }
 
@@ -1004,7 +1033,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/about/about-414x736-90.jpg") center / cover no-repeat #000;
     }
 
-    section.about h1 {
+    section.about h2 {
         width: 140px;
         top: 140px;
         left: 220px;
@@ -1029,7 +1058,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/offer/offer-414x736-90.jpg") center / cover no-repeat #000;
     }
 
-    section.offer h1 {
+    section.offer h2 {
         top: 140px;
         font-size: 4rem;
     }
@@ -1055,7 +1084,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/gallery/gallery-414x736-90.jpg") center / cover no-repeat;
     }
 
-    section.gallery h1 {
+    section.gallery h2 {
         top: 140px;
         font-size: 4.5rem;
     }
@@ -1074,7 +1103,7 @@ nav.mobile.animation {
 
     /* Footer - Contact */
 
-    footer h1 {
+    footer h2 {
         padding-top: 130px;
     }
 
@@ -1127,8 +1156,8 @@ nav.mobile.animation {
         height: 90px;
     }
 
-    .webp div.nav-logo,
-    .no-webp div.nav-logo {
+    .webp div.nav-logo img,
+    .no-webp div.nav-logo img {
         width: 144px;
         height: 112px;
         top: -11px;
@@ -1179,34 +1208,47 @@ nav.mobile.animation {
 
     /* Header */
 
-    header div.img1 {
+    .webp header div.img1 {
+        background: url("../assets/images/sections/main/img1/image1-718x854-90.webp") center bottom / contain no-repeat #000;
+    }
+
+    .no-webp header div.img1 {
         background: url("../assets/images/sections/main/img1/image1-718x854-90.jpg") center bottom / contain no-repeat #000;
     }
 
-    header div.img2 {
+    .no-webp header div.img2 {
         background: url("../assets/images/sections/main/img2/image2-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img3 {
+    .webp header div.img2 {
+        background: url("../assets/images/sections/main/img2/image2-718x854-90.webp") center / cover no-repeat;
+    }
+
+    .no-webp header div.img3 {
         background: url("../assets/images/sections/main/img3/image3-718x854-90.jpg") center / cover no-repeat;
     }
 
-    header div.img1 h1 {
+    .webp header div.img3 {
+        background: url("../assets/images/sections/main/img3/image3-718x854-90.webp") center / cover no-repeat;
+    }
+
+    header div.img1 h1,
+    header div.img1 p {
         top: 150px;
         left: 300px;
         font-size: 4rem;
         width: 430px;
     }
 
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img2 p,
+    header div.img3 p {
         top: 250px;
         left: 200px;
         width: 550px;
         font-size: 5rem;
     }
 
-    header div.img3 h1 {
+    header div.img3 p {
         top: 200px;
     }
 
@@ -1220,7 +1262,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/about/about-718x854-90.jpg") center / cover no-repeat #000;
     }
 
-    section.about h1 {
+    section.about h2 {
         top: 200px;
         left: 50vw;
         width: 180px;
@@ -1244,7 +1286,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/offer/offer-718x854-90.jpg") center / cover no-repeat #000;
     }
 
-    section.offer h1 {
+    section.offer h2 {
         top: 170px;
         left: 50px;
         font-size: 5rem;
@@ -1275,7 +1317,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/gallery/gallery-718x854-90.jpg") center / cover no-repeat;
     }
 
-    section.gallery h1 {
+    section.gallery h2 {
         top: 180px;
         font-size: 6rem;
         width: 230px;
@@ -1295,7 +1337,7 @@ nav.mobile.animation {
 
     /* Footer - Contact */
 
-    footer h1 {
+    footer h2 {
         font-size: 5rem;
         padding-top: 130px;
     }
@@ -1439,21 +1481,22 @@ nav.mobile.animation {
         background: url("../assets/images/sections/main/img3/land-image3-1280x854-90.jpg") top / cover no-repeat;
     }
 
-    header div.img1 h1 {
+    header div.img1 h1,
+    header div.img1 p {
         width: 250px;
         top: 100px;
         left: 270px;
         font-size: 2.2rem;
     }
 
-    header div.img2 h1 {
+    header div.img2 p {
         width: 250px;
         top: 70px;
         left: 250px;
         font-size: 2.2rem;
     }
 
-    header div.img3 h1 {
+    header div.img3 p {
         width: 250px;
         top: 50px;
         left: 270px;
@@ -1470,7 +1513,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/about/land-about-1280x854-90.jpg") top / cover no-repeat;
     }
 
-    section.about h1 {
+    section.about h2 {
         width: 160px;
         top: 45px;
         left: 300px;
@@ -1493,7 +1536,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/offer/land-offer-1280x854-90.jpg") top / cover no-repeat;
     }
 
-    section.offer h1 {
+    section.offer h2 {
         top: 30px;
         left: 20px;
     }
@@ -1521,7 +1564,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/gallery/gallery-1280x854-90.jpg") center / cover no-repeat;
     }
 
-    section.gallery h1 {
+    section.gallery h2 {
         top: 20px;
     }
 
@@ -1536,7 +1579,7 @@ nav.mobile.animation {
 
     /* Contact Section */
 
-    footer h1 {
+    footer h2 {
         padding-top: 40px;
     }
 
@@ -1622,8 +1665,9 @@ nav.mobile.animation {
     /* Header Section */
 
     header div.img1 h1,
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img1 p,
+    header div.img2 p,
+    header div.img3 p {
         width: 280px;
         left: 300px;
         font-size: 2.5rem;
@@ -1631,7 +1675,7 @@ nav.mobile.animation {
 
     /* About Section */
 
-    section.about h1 {
+    section.about h2 {
         left: 350px;
     }
 
@@ -1643,7 +1687,7 @@ nav.mobile.animation {
 
     /* Offer Section */
 
-    section.offer h1 {
+    section.offer h2 {
         font-size: 3.5rem;
     }
 
@@ -1655,7 +1699,7 @@ nav.mobile.animation {
 
     /* Gallery Section */
 
-    section.gallery h1 {
+    section.gallery h2 {
         font-size: 4rem;
     }
 
@@ -1671,7 +1715,7 @@ nav.mobile.animation {
 
     /* Contact Section */
 
-    footer h1 {
+    footer h2 {
         padding-top: 60px;
         font-size: 4rem;
     }
@@ -1741,21 +1785,22 @@ nav.mobile.animation {
     /* Header section */
 
     header div.img1 h1,
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img1 p,
+    header div.img2 p,
+    header div.img3 p {
         width: 320px;
         top: 120px;
         left: 350px;
         font-size: 2.8rem;
     }
 
-    header div.img3 h1 {
+    header div.img3 p {
         top: 80px;
     }
 
     /* About section */
 
-    section.about h1 {
+    section.about h2 {
         top: 80px;
         left: 430px;
         font-size: 4.5rem;
@@ -1771,7 +1816,7 @@ nav.mobile.animation {
 
     /* Offer section */
 
-    section.offer h1 {
+    section.offer h2 {
         font-size: 4rem;
     }
 
@@ -1786,7 +1831,7 @@ nav.mobile.animation {
 
     /* Gallery section */
 
-    section.gallery h1 {
+    section.gallery h2 {
         font-size: 4.5rem;
     }
 
@@ -1802,7 +1847,7 @@ nav.mobile.animation {
 
     /* Contact Section */
 
-    footer h1 {
+    footer h2 {
         font-size: 4.5rem;
     }
 
@@ -2094,19 +2139,20 @@ nav.mobile.animation {
     /* Header Section */
 
     header div.img1 h1,
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img1 p,
+    header div.img2 p,
+    header div.img3 p {
         width: 450px;
         top: 25vh;
         left: 50vw;
         font-size: 4rem;
     }
 
-    header div.img2 h1 {
+    header div.img2 p {
         left: 40vw;
     }
 
-    header div.img3 h1 {
+    header div.img3 p {
         top: 15vh;
     }
 
@@ -2118,7 +2164,7 @@ nav.mobile.animation {
 
     /* About Section */
 
-    section.about h1 {
+    section.about h2 {
         width: 250px;
         top: 20vh;
         left: 55vw;
@@ -2134,7 +2180,7 @@ nav.mobile.animation {
 
     /* Offer Section */
 
-    section.offer h1 {
+    section.offer h2 {
         font-size: 6rem;
     }
 
@@ -2150,7 +2196,7 @@ nav.mobile.animation {
 
     /* Gallery Section */
 
-    section.gallery h1 {
+    section.gallery h2 {
         width: 170px;
         top: 70px;
         left: 85vw;
@@ -2285,14 +2331,15 @@ nav.mobile.animation {
         background-position-y: center;
     }
 
-    header div.img1 h1 {
+    header div.img1 h1,
+    header div.img1 p {
         top: 25vh;
         left: 50vw;
     }
 
     /* About Section */
 
-    section.about h1 {
+    section.about h2 {
         left: 60vw;
     }
 
@@ -2314,7 +2361,7 @@ nav.mobile.animation {
 
     /* Gallery Section */
 
-    section.gallery h1 {
+    section.gallery h2 {
         top: 5vh;
     }
 
@@ -2384,15 +2431,16 @@ nav.mobile.animation {
     /* Header Section */
 
     header div.img1 h1,
-    header div.img2 h1,
-    header div.img3 h1 {
+    header div.img1 p,
+    header div.img2 p,
+    header div.img3 p {
         width: 500px;
         font-size: 4.5rem;
     }
 
     /* About Section */
 
-    section.about h1 {
+    section.about h2 {
         left: 58vw;
         font-size: 7rem;
     }
@@ -2404,7 +2452,7 @@ nav.mobile.animation {
 
     /* Offer Section */
 
-    section.offer h1 {
+    section.offer h2 {
         font-size: 7rem;
     }
 
@@ -2419,7 +2467,7 @@ nav.mobile.animation {
 
     /* Gallery Section */
 
-    section.gallery h1 {
+    section.gallery h2 {
         font-size: 5rem;
     }
 
@@ -2478,7 +2526,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/main/img2/land-image2-1920x1281-70.jpg") bottom / cover no-repeat;
     }
 
-    header div.img2 h1 {
+    header div.img2 p {
         left: 55vw;
     }
 
@@ -2500,7 +2548,7 @@ nav.mobile.animation {
         background: url("../assets/images/sections/about/land-about-1920x1281.jpg") top / cover no-repeat;
     }
 
-    section.about h1 {
+    section.about h2 {
         left: 60vw;
     }
 
@@ -2569,7 +2617,7 @@ nav.mobile.animation {
 
     /* Header */
 
-    header div.img2 h1 {
+    header div.img2 p {
         top: 20vh;
         left: 50vw;
     }
@@ -2580,7 +2628,7 @@ nav.mobile.animation {
         max-height: 90vw;
     }
 
-    section.gallery h1 {
+    section.gallery h2 {
         font-size: 5rem;
     }
 
@@ -2623,7 +2671,7 @@ nav.mobile.animation {
     }
 
     /* Header */
-    header div.img2 h1 {
+    header div.img2 p {
         top: 15vh;
     }
 
@@ -2670,7 +2718,7 @@ nav.mobile.animation {
 
     /* Header */
 
-    header div.img2 h1 {
+    header div.img2 p {
         top: 25vh;
     }
 
@@ -2688,7 +2736,7 @@ nav.mobile.animation {
 
     /* Gallery Section */
 
-    section.gallery h1 {
+    section.gallery h2 {
         left: 83vw;
         top: 10vh;
         font-size: 6rem;
@@ -2705,7 +2753,7 @@ nav.mobile.animation {
 
     /* Contact Section */
 
-    footer h1 {
+    footer h2 {
         font-size: 5rem;
     }
 
@@ -2741,7 +2789,7 @@ nav.mobile.animation {
 
     /* Header */
 
-    header div.img2 h1 {
+    header div.img2 p {
         top: 20vh;
     }
 
